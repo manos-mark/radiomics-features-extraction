@@ -5,7 +5,7 @@ Radiomic data has the potential to uncover disease characteristics that fail to 
 ![alt text](https://healthcare-in-europe.com/media/story_section_image/3188/image-01-picture-radiomics-workflow.jpg)
 
 ## Data 
-  The example data files consist of two folders:
+  The data consist of two folders:
   - pyradiomics_data from [pyradiomics](https://github.com/Radiomics/pyradiomics/tree/master/data) project.
   - CT_medical_images from [kaggle](https://www.kaggle.com/kmader/siim-medical-images).
     - The dataset is designed to allow for different methods to be tested for examining the trends in CT image data associated with using contrast and patient age. The basic idea is to identify image textures, statistical patterns and features correlating strongly with these traits and possibly build simple tools for automatically classifying these images when they have been misclassified (or finding outliers which could be suspicious cases, bad measurements, or poorly calibrated machines).  
