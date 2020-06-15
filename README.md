@@ -1,10 +1,10 @@
 # Radiomics Thesis Paper
 Radiomic data has the potential to uncover disease characteristics that fail to be appreciated by the naked eye. The central hypothesis of radiomics is that distinctive imaging algorithms quantify the state of diseases, and thereby provide valuable information for personalized medicine. Radiomics has emerged from oncology, but can be applied to other medical problems where a disease is imaged. 
 
-## Radiomics workflow
+## 0.0 Radiomics workflow
 ![alt text](https://healthcare-in-europe.com/media/story_section_image/3188/image-01-picture-radiomics-workflow.jpg)
 
-## Image Acquisition 
+## 1.0 Image Acquisition 
   The data consist of two folders:
   - pyradiomics_data from [pyradiomics](https://github.com/Radiomics/pyradiomics/tree/master/data) project.
   - CT_medical_images from [kaggle](https://www.kaggle.com/kmader/siim-medical-images).
@@ -12,14 +12,14 @@ Radiomic data has the potential to uncover disease characteristics that fail to 
     - The data are a tiny subset of images from the cancer imaging archive. They consist of the middle slice of all CT images taken where valid age, modality, and contrast tags could be found. TCIA Archive Link - https://wiki.cancerimagingarchive.net/display/Public/TCGA-LUAD
   The images data is provided in DICOM format, named with a naming convention allowing us to identify some meta-data about the images.
   
-## Segmentation
+## 2.0 Segmentation
 
-## Feature extraction 
+## 3.0 Feature extraction 
 
-## Feature analyses
+## 4.0 Feature analyses
 
-## Data Integration
+## 5.0 Data Integration
 
-## Model Building
+## 6.0 Model Building
 
-## Models Comparison
+## 7.0 Models Comparison
