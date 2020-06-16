@@ -4,7 +4,7 @@ Radiomic data has the potential to uncover disease characteristics that fail to 
 ## 0.0 Radiomics workflow
 ![alt text](https://healthcare-in-europe.com/media/story_section_image/3188/image-01-picture-radiomics-workflow.jpg)
 
-## 1.0 Image Acquisition 
+## 1.0 Image Acquisition and Segmentation
   The data consist of two folders:
   - pyradiomics_data from [pyradiomics](https://github.com/Radiomics/pyradiomics/tree/master/data) project.
   - CT_medical_images from [kaggle](https://www.kaggle.com/kmader/siim-medical-images).
@@ -12,14 +12,10 @@ Radiomic data has the potential to uncover disease characteristics that fail to 
     - The data are a tiny subset of images from the cancer imaging archive. They consist of the middle slice of all CT images taken where valid age, modality, and contrast tags could be found. TCIA Archive Link - https://wiki.cancerimagingarchive.net/display/Public/TCGA-LUAD
   The images data is provided in DICOM format, named with a naming convention allowing us to identify some meta-data about the images.
   
-## 2.0 Segmentation
+## 2.0 Feature extraction 
 
-## 3.0 Feature extraction 
+## 3.0 Feature analyses
 
-## 4.0 Feature analyses
+## 4.0 Model Building
 
-## 5.0 Data Integration
-
-## 6.0 Model Building
-
-## 7.0 Models Comparison
+## 5.0 Models Comparison
