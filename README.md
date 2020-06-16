@@ -14,7 +14,7 @@ Radiomic data has the potential to uncover disease characteristics that fail to 
   
 ## 2.0 Feature extraction 
 
-## 3.0 Feature analyses
+## 3.0 Feature analysis
 
 ## 4.0 Model Building
 
