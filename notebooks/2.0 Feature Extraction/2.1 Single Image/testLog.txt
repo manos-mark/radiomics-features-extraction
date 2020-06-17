@@ -1,0 +1,76 @@
+DEBUG:radiomics: Getting test case brain1
+DEBUG:radiomics: Getting Image file
+INFO:radiomics: Test case file brain1_image.nrrd not available locally, downloading from github...
+DEBUG:radiomics: Retrieving file at https://github.com/Radiomics/pyradiomics/releases/download/v1.0/brain1_image.nrrd
+INFO:radiomics.featureextractor: No valid config parameter, using defaults: {'minimumROIDimensions': 2, 'minimumROISize': None, 'normalize': False, 'normalizeScale': 1, 'removeOutliers': None, 'resampledPixelSpacing': None, 'interpolator': 'sitkBSpline', 'preCrop': False, 'padDistance': 5, 'distances': [1], 'force2D': False, 'force2Ddimension': 0, 'resegmentRange': None, 'label': 1, 'additionalInfo': True}
+INFO:radiomics.featureextractor: Enabled image types: {'Original': {}}
+INFO:radiomics.featureextractor: Enabled features: {'firstorder': [], 'glcm': [], 'gldm': [], 'glrlm': [], 'glszm': [], 'ngtdm': [], 'shape': []}
+INFO:radiomics.featureextractor: No valid config parameter, using defaults: {'minimumROIDimensions': 2, 'minimumROISize': None, 'normalize': False, 'normalizeScale': 1, 'removeOutliers': None, 'resampledPixelSpacing': None, 'interpolator': 'sitkBSpline', 'preCrop': False, 'padDistance': 5, 'distances': [1], 'force2D': False, 'force2Ddimension': 0, 'resegmentRange': None, 'label': 1, 'additionalInfo': True}
+INFO:radiomics.featureextractor: Enabled image types: {'Original': {}}
+INFO:radiomics.featureextractor: Enabled features: {'firstorder': [], 'glcm': [], 'gldm': [], 'glrlm': [], 'glszm': [], 'ngtdm': [], 'shape': []}
+INFO:radiomics.featureextractor: Applying custom setting overrides: {'binWidth': 20, 'sigma': [1, 2, 3]}
+DEBUG:radiomics.featureextractor: Settings: {'minimumROIDimensions': 2, 'minimumROISize': None, 'normalize': False, 'normalizeScale': 1, 'removeOutliers': None, 'resampledPixelSpacing': None, 'interpolator': 'sitkBSpline', 'preCrop': False, 'padDistance': 5, 'distances': [1], 'force2D': False, 'force2Ddimension': 0, 'resegmentRange': None, 'label': 1, 'additionalInfo': True, 'binWidth': 20, 'sigma': [1, 2, 3]}
+INFO:radiomics.featureextractor: No valid config parameter, using defaults: {'minimumROIDimensions': 2, 'minimumROISize': None, 'normalize': False, 'normalizeScale': 1, 'removeOutliers': None, 'resampledPixelSpacing': None, 'interpolator': 'sitkBSpline', 'preCrop': False, 'padDistance': 5, 'distances': [1], 'force2D': False, 'force2Ddimension': 0, 'resegmentRange': None, 'label': 1, 'additionalInfo': True}
+INFO:radiomics.featureextractor: Enabled image types: {'Original': {}}
+INFO:radiomics.featureextractor: Enabled features: {'firstorder': [], 'glcm': [], 'gldm': [], 'glrlm': [], 'glszm': [], 'ngtdm': [], 'shape': []}
+INFO:radiomics.featureextractor: Applying custom setting overrides: {'binWidth': 20, 'sigma': [1, 2, 3]}
+DEBUG:radiomics.featureextractor: Settings: {'minimumROIDimensions': 2, 'minimumROISize': None, 'normalize': False, 'normalizeScale': 1, 'removeOutliers': None, 'resampledPixelSpacing': None, 'interpolator': 'sitkBSpline', 'preCrop': False, 'padDistance': 5, 'distances': [1], 'force2D': False, 'force2Ddimension': 0, 'resegmentRange': None, 'label': 1, 'additionalInfo': True, 'binWidth': 20, 'sigma': [1, 2, 3]}
+DEBUG:radiomics.featureextractor: Enabling image type LoG (no additional custom settings)
+DEBUG:radiomics.featureextractor: Enabled images types: {'Original': {}, 'LoG': {}}
+DEBUG:radiomics.featureextractor: Disabling all feature classes
+DEBUG:radiomics.featureextractor: Enabling all features in class firstorder
+DEBUG:radiomics.featureextractor: Enabled features: {'firstorder': []}
+DEBUG:radiomics.featureextractor: Updating enabled features with {'glcm': ['Autocorrelation', 'Homogeneity1', 'SumSquares']}
+DEBUG:radiomics.featureextractor: Enabled features: {'firstorder': [], 'glcm': ['Autocorrelation', 'Homogeneity1', 'SumSquares']}
+INFO:radiomics.featureextractor: No valid config parameter, using defaults: {'minimumROIDimensions': 2, 'minimumROISize': None, 'normalize': False, 'normalizeScale': 1, 'removeOutliers': None, 'resampledPixelSpacing': None, 'interpolator': 'sitkBSpline', 'preCrop': False, 'padDistance': 5, 'distances': [1], 'force2D': False, 'force2Ddimension': 0, 'resegmentRange': None, 'label': 1, 'additionalInfo': True}
+INFO:radiomics.featureextractor: Enabled image types: {'Original': {}}
+INFO:radiomics.featureextractor: Enabled features: {'firstorder': [], 'glcm': [], 'gldm': [], 'glrlm': [], 'glszm': [], 'ngtdm': [], 'shape': []}
+INFO:radiomics.featureextractor: Applying custom setting overrides: {'binWidth': 20, 'sigma': [1, 2, 3]}
+DEBUG:radiomics.featureextractor: Settings: {'minimumROIDimensions': 2, 'minimumROISize': None, 'normalize': False, 'normalizeScale': 1, 'removeOutliers': None, 'resampledPixelSpacing': None, 'interpolator': 'sitkBSpline', 'preCrop': False, 'padDistance': 5, 'distances': [1], 'force2D': False, 'force2Ddimension': 0, 'resegmentRange': None, 'label': 1, 'additionalInfo': True, 'binWidth': 20, 'sigma': [1, 2, 3]}
+DEBUG:radiomics.featureextractor: Disabling all feature classes
+DEBUG:radiomics.featureextractor: Enabling all features in class firstorder
+DEBUG:radiomics.featureextractor: Enabled features: {'firstorder': []}
+INFO:radiomics.featureextractor: No valid config parameter, using defaults: {'minimumROIDimensions': 2, 'minimumROISize': None, 'normalize': False, 'normalizeScale': 1, 'removeOutliers': None, 'resampledPixelSpacing': None, 'interpolator': 'sitkBSpline', 'preCrop': False, 'padDistance': 5, 'distances': [1], 'force2D': False, 'force2Ddimension': 0, 'resegmentRange': None, 'label': 1, 'additionalInfo': True}
+INFO:radiomics.featureextractor: Enabled image types: {'Original': {}}
+INFO:radiomics.featureextractor: Enabled features: {'firstorder': [], 'glcm': [], 'gldm': [], 'glrlm': [], 'glszm': [], 'ngtdm': [], 'shape': []}
+DEBUG:radiomics.featureextractor: Enabling all features in class firstorder
+DEBUG:radiomics.featureextractor: Enabled features: {'firstorder': [], 'glcm': [], 'gldm': [], 'glrlm': [], 'glszm': [], 'ngtdm': [], 'shape': []}
+INFO:radiomics.featureextractor: No valid config parameter, using defaults: {'minimumROIDimensions': 2, 'minimumROISize': None, 'normalize': False, 'normalizeScale': 1, 'removeOutliers': None, 'resampledPixelSpacing': None, 'interpolator': 'sitkBSpline', 'preCrop': False, 'padDistance': 5, 'distances': [1], 'force2D': False, 'force2Ddimension': 0, 'resegmentRange': None, 'label': 1, 'additionalInfo': True}
+INFO:radiomics.featureextractor: Enabled image types: {'Original': {}}
+INFO:radiomics.featureextractor: Enabled features: {'firstorder': [], 'glcm': [], 'gldm': [], 'glrlm': [], 'glszm': [], 'ngtdm': [], 'shape': []}
+DEBUG:radiomics.featureextractor: Enabling all features in class firstorder
+DEBUG:radiomics.featureextractor: Enabled features: {'firstorder': [], 'glcm': [], 'gldm': [], 'glrlm': [], 'glszm': [], 'ngtdm': [], 'shape': []}
+INFO:radiomics.featureextractor: No valid config parameter, using defaults: {'minimumROIDimensions': 2, 'minimumROISize': None, 'normalize': False, 'normalizeScale': 1, 'removeOutliers': None, 'resampledPixelSpacing': None, 'interpolator': 'sitkBSpline', 'preCrop': False, 'padDistance': 5, 'distances': [1], 'force2D': False, 'force2Ddimension': 0, 'resegmentRange': None, 'label': 1, 'additionalInfo': True}
+INFO:radiomics.featureextractor: Enabled image types: {'Original': {}}
+INFO:radiomics.featureextractor: Enabled features: {'firstorder': [], 'glcm': [], 'gldm': [], 'glrlm': [], 'glszm': [], 'ngtdm': [], 'shape': []}
+DEBUG:radiomics.featureextractor: Enabling all features in class firstorder
+DEBUG:radiomics.featureextractor: Enabled features: {'firstorder': [], 'glcm': [], 'gldm': [], 'glrlm': [], 'glszm': [], 'ngtdm': [], 'shape': []}
+INFO:radiomics.featureextractor: No valid config parameter, using defaults: {'minimumROIDimensions': 2, 'minimumROISize': None, 'normalize': False, 'normalizeScale': 1, 'removeOutliers': None, 'resampledPixelSpacing': None, 'interpolator': 'sitkBSpline', 'preCrop': False, 'padDistance': 5, 'distances': [1], 'force2D': False, 'force2Ddimension': 0, 'resegmentRange': None, 'label': 1, 'additionalInfo': True}
+INFO:radiomics.featureextractor: Enabled image types: {'Original': {}}
+INFO:radiomics.featureextractor: Enabled features: {'firstorder': [], 'glcm': [], 'gldm': [], 'glrlm': [], 'glszm': [], 'ngtdm': [], 'shape': []}
+DEBUG:radiomics.featureextractor: Enabling all features in all feature classes
+DEBUG:radiomics.featureextractor: Enabled features: {'firstorder': [], 'glcm': [], 'gldm': [], 'glrlm': [], 'glszm': [], 'ngtdm': [], 'shape': [], 'shape2D': []}
+DEBUG:radiomics: Getting test case brain1
+DEBUG:radiomics: Getting Image file
+INFO:radiomics: Test case file brain1_image.nrrd not available locally, downloading from github...
+DEBUG:radiomics: Retrieving file at https://github.com/Radiomics/pyradiomics/releases/download/v1.0/brain1_image.nrrd
+INFO:radiomics.featureextractor: No valid config parameter, using defaults: {'minimumROIDimensions': 2, 'minimumROISize': None, 'normalize': False, 'normalizeScale': 1, 'removeOutliers': None, 'resampledPixelSpacing': None, 'interpolator': 'sitkBSpline', 'preCrop': False, 'padDistance': 5, 'distances': [1], 'force2D': False, 'force2Ddimension': 0, 'resegmentRange': None, 'label': 1, 'additionalInfo': True}
+INFO:radiomics.featureextractor: Enabled image types: {'Original': {}}
+INFO:radiomics.featureextractor: Enabled features: {'firstorder': [], 'glcm': [], 'gldm': [], 'glrlm': [], 'glszm': [], 'ngtdm': [], 'shape': []}
+DEBUG:radiomics.featureextractor: Enabling all features in all feature classes
+DEBUG:radiomics.featureextractor: Enabled features: {'firstorder': [], 'glcm': [], 'gldm': [], 'glrlm': [], 'glszm': [], 'ngtdm': [], 'shape': [], 'shape2D': []}
+INFO:radiomics.featureextractor: No valid config parameter, using defaults: {'minimumROIDimensions': 2, 'minimumROISize': None, 'normalize': False, 'normalizeScale': 1, 'removeOutliers': None, 'resampledPixelSpacing': None, 'interpolator': 'sitkBSpline', 'preCrop': False, 'padDistance': 5, 'distances': [1], 'force2D': False, 'force2Ddimension': 0, 'resegmentRange': None, 'label': 1, 'additionalInfo': True}
+INFO:radiomics.featureextractor: Enabled image types: {'Original': {}}
+INFO:radiomics.featureextractor: Enabled features: {'firstorder': [], 'glcm': [], 'gldm': [], 'glrlm': [], 'glszm': [], 'ngtdm': [], 'shape': []}
+DEBUG:radiomics.featureextractor: Enabling all features in all feature classes
+DEBUG:radiomics.featureextractor: Enabled features: {'firstorder': [], 'glcm': [], 'gldm': [], 'glrlm': [], 'glszm': [], 'ngtdm': [], 'shape': [], 'shape2D': []}
+INFO:radiomics.featureextractor: No valid config parameter, using defaults: {'minimumROIDimensions': 2, 'minimumROISize': None, 'normalize': False, 'normalizeScale': 1, 'removeOutliers': None, 'resampledPixelSpacing': None, 'interpolator': 'sitkBSpline', 'preCrop': False, 'padDistance': 5, 'distances': [1], 'force2D': False, 'force2Ddimension': 0, 'resegmentRange': None, 'label': 1, 'additionalInfo': True}
+INFO:radiomics.featureextractor: Enabled image types: {'Original': {}}
+INFO:radiomics.featureextractor: Enabled features: {'firstorder': [], 'glcm': [], 'gldm': [], 'glrlm': [], 'glszm': [], 'ngtdm': [], 'shape': []}
+DEBUG:radiomics.featureextractor: Enabling all features in all feature classes
+DEBUG:radiomics.featureextractor: Enabled features: {'firstorder': [], 'glcm': [], 'gldm': [], 'glrlm': [], 'glszm': [], 'ngtdm': [], 'shape': [], 'shape2D': []}
+DEBUG:radiomics: Getting test case brain1
+DEBUG:radiomics: Getting Image file
+INFO:radiomics: Test case file brain1_image.nrrd not available locally, downloading from github...
+DEBUG:radiomics: Creating data directory: ../data/pyradiomics_data
+DEBUG:radiomics: Retrieving file at https://github.com/Radiomics/pyradiomics/releases/download/v1.0/brain1_image.nrrd
