@@ -1,7 +1,5 @@
 # Radiomics Thesis Paper
-*Radiomic data has the potential to uncover disease characteristics that fail to be appreciated by the naked eye. The central hypothesis of radiomics is that distinctive imaging algorithms quantify the state of diseases, and thereby provide valuable information for personalized medicine. Radiomics has emerged from oncology, but can be applied to other medical problems where a disease is imaged.* 
-
-Read more [here](https://www.radiomics.io/). 
+*Radiomic data has the potential to uncover disease characteristics that fail to be appreciated by the naked eye. The central hypothesis of radiomics is that distinctive imaging algorithms quantify the state of diseases, and thereby provide valuable information for personalized medicine. Radiomics has emerged from oncology, but can be applied to other medical problems where a disease is imaged.* [radiomics.io](https://www.radiomics.io/). 
 
 The purpose of this project is to automate the radiomics workflow and find the best composition of features, settings and parameters that can be used in order to achieve the best performance. Performance can be measured with some specific metrics (like accuracy or AUC) after our AI model has been trained. 
 
