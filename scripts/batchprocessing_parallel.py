@@ -19,11 +19,12 @@ from radiomics.featureextractor import RadiomicsFeatureExtractor
 threading.current_thread().name = 'Main'
 
 # File variables
-ROOT = os.getcwd()
-PARAMS = os.path.join(ROOT, 'exampleSettings', 'Params.yaml')  # Parameter file
-LOG = os.path.join(ROOT, 'log.txt')  # Location of output log file
-INPUTCSV = os.path.join(ROOT, 'testCases.csv')
-OUTPUTCSV = os.path.join(ROOT, 'results.csv')
+ROOT = os.path.abspath(os.path.join(os.getcwd(), ".."))
+PARAMS = os.path.join(ROOT, 'settings', 'Params.yaml')  # Parameter file
+DATA = os.path.join(ROOT, "data")
+LOG = os.path.join(DATA, 'logs', 'parallel_batch_log.txt')  # Location of output log file
+INPUTCSV = os.path.join(ROOT, 'settings', 'batch_test_cases.csv')
+OUTPUTCSV = os.path.join(DATA, 'extracted-features', 'parallel_batch_' + str(datetime.now()) + '.csv')
 
 # Parallel processing variables
 TEMP_DIR = '_TEMP'
