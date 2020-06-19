@@ -3,6 +3,12 @@
 
 Read more [here](https://www.radiomics.io/). 
 
+The purpose of this project is to automate the radiomics workflow and find the best composition of features, settings and parameters that can be used in order to achieve the best performance. Performance can be measured with some specific metrics (like accuracy or AUC) after our AI model has been trained. 
+
+Using the pyradiomics library, multiple features can be extracted from medical images. After the extraction, feature analysis takes place in order to omit some portion of the features and then a machine learning model will be trained on those features. 
+
+This process will take place multiple times using scenarios of different features and parameters until the best-case scenario can be found. 
+
 ## 0.0 Radiomics workflow
 In the `/notebooks` folder there is example code for some basic "how to use pyradiomics" and further analysis for radiomics workflow.
 
