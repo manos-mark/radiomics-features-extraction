@@ -10,11 +10,7 @@ In the `/notebooks` folder there is example code for some basic "how to use pyra
 
 ## 1.0 Image Acquisition and Segmentation
   The data consist of two folders:
-  - pyradiomics_data from [pyradiomics](https://github.com/Radiomics/pyradiomics/tree/master/data) project.
-  - CT_medical_images from [kaggle](https://www.kaggle.com/kmader/siim-medical-images).
-    - The dataset is designed to allow for different methods to be tested for examining the trends in CT image data associated with using contrast and patient age. The basic idea is to identify image textures, statistical patterns and features correlating strongly with these traits and possibly build simple tools for automatically classifying these images when they have been misclassified (or finding outliers which could be suspicious cases, bad measurements, or poorly calibrated machines).  
-    - The data are a tiny subset of images from the cancer imaging archive. They consist of the middle slice of all CT images taken where valid age, modality, and contrast tags could be found. TCIA Archive Link - https://wiki.cancerimagingarchive.net/display/Public/TCGA-LUAD
-  The images data is provided in DICOM format, named with a naming convention allowing us to identify some meta-data about the images.
+  - `input-images` from [pyradiomics](https://github.com/Radiomics/pyradiomics/tree/master/data) project.
   
 ## 2.0 Feature extraction 
   In this section we will focus on feature extraction from a single image or a batch of images. For this project our masks (ROI) are already segmented. Detailed description on feature classes and individual features is provided in section [Radiomic Features](https://pyradiomics.readthedocs.io/en/latest/features.html#radiomics-features-label) of the documentation.
