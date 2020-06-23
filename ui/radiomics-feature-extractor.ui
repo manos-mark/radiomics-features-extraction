@@ -358,6 +358,9 @@
      </widget>
     </widget>
     <widget class="QWidget" name="settings_customization_tab">
+     <property name="enabled">
+      <bool>false</bool>
+     </property>
      <property name="cursor">
       <cursorShape>ArrowCursor</cursorShape>
      </property>
@@ -578,7 +581,7 @@
     </property>
     <layout class="QHBoxLayout" name="horizontalLayout_5">
      <item>
-      <widget class="QPushButton" name="previous_btn">
+      <widget class="QPushButton" name="back_btn">
        <property name="enabled">
         <bool>false</bool>
        </property>
@@ -589,12 +592,15 @@
         </sizepolicy>
        </property>
        <property name="text">
-        <string>Previous</string>
+        <string>Back</string>
        </property>
       </widget>
      </item>
      <item>
       <widget class="QPushButton" name="next_btn">
+       <property name="enabled">
+        <bool>false</bool>
+       </property>
        <property name="sizePolicy">
         <sizepolicy hsizetype="Minimum" vsizetype="Preferred">
          <horstretch>0</horstretch>
@@ -621,7 +627,7 @@
      <x>0</x>
      <y>0</y>
      <width>1010</width>
-     <height>23</height>
+     <height>26</height>
     </rect>
    </property>
   </widget>
