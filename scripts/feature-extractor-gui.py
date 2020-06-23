@@ -5,7 +5,7 @@ import sys
 class Ui(QtWidgets.QMainWindow):
     def __init__(self):
         super(Ui, self).__init__() # Call the inherited classes __init__ method
-        uic.loadUi('scripts/radiomics-feature-extractor.ui', self) # Load the .ui file
+        uic.loadUi('radiomics-feature-extractor.ui', self) # Load the .ui file
         self.show() # Show the GUI
 
 
