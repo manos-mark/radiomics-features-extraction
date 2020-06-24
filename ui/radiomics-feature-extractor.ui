@@ -83,7 +83,7 @@
     <property name="tabBarAutoHide">
      <bool>false</bool>
     </property>
-    <widget class="QWidget" name="input_images_tab">
+    <widget class="QWidget" name="input_tab">
      <property name="enabled">
       <bool>true</bool>
      </property>
@@ -129,7 +129,7 @@
         </spacer>
        </item>
        <item>
-        <widget class="QRadioButton" name="single_image_upload_radio">
+        <widget class="QRadioButton" name="single_image_radio">
          <property name="enabled">
           <bool>true</bool>
          </property>
@@ -150,7 +150,7 @@
         </widget>
        </item>
        <item>
-        <widget class="QRadioButton" name="batch_images_upload_radio">
+        <widget class="QRadioButton" name="batch_images_radio">
          <property name="font">
           <font>
            <pointsize>9</pointsize>
@@ -357,7 +357,7 @@
       </layout>
      </widget>
     </widget>
-    <widget class="QWidget" name="settings_customization_tab">
+    <widget class="QWidget" name="settings_tab">
      <property name="enabled">
       <bool>false</bool>
      </property>
@@ -627,7 +627,7 @@
      <x>0</x>
      <y>0</y>
      <width>1010</width>
-     <height>26</height>
+     <height>23</height>
     </rect>
    </property>
   </widget>
@@ -638,102 +638,5 @@
   </widget>
  </widget>
  <resources/>
- <connections>
-  <connection>
-   <sender>single_image_upload_radio</sender>
-   <signal>toggled(bool)</signal>
-   <receiver>upload_csv_btn</receiver>
-   <slot>setDisabled(bool)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>1349</x>
-     <y>327</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>1462</x>
-     <y>765</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>batch_images_upload_radio</sender>
-   <signal>toggled(bool)</signal>
-   <receiver>upload_image_btn</receiver>
-   <slot>setDisabled(bool)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>1605</x>
-     <y>327</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>1462</x>
-     <y>515</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>batch_images_upload_radio</sender>
-   <signal>toggled(bool)</signal>
-   <receiver>upload_ROI_btn</receiver>
-   <slot>setDisabled(bool)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>1605</x>
-     <y>327</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>1462</x>
-     <y>635</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>single_image_upload_radio</sender>
-   <signal>toggled(bool)</signal>
-   <receiver>upload_image_btn</receiver>
-   <slot>setEnabled(bool)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>1349</x>
-     <y>327</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>1462</x>
-     <y>515</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>single_image_upload_radio</sender>
-   <signal>toggled(bool)</signal>
-   <receiver>upload_ROI_btn</receiver>
-   <slot>setEnabled(bool)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>1349</x>
-     <y>327</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>1462</x>
-     <y>635</y>
-    </hint>
-   </hints>
-  </connection>
-  <connection>
-   <sender>batch_images_upload_radio</sender>
-   <signal>toggled(bool)</signal>
-   <receiver>upload_csv_btn</receiver>
-   <slot>setEnabled(bool)</slot>
-   <hints>
-    <hint type="sourcelabel">
-     <x>1605</x>
-     <y>327</y>
-    </hint>
-    <hint type="destinationlabel">
-     <x>1462</x>
-     <y>765</y>
-    </hint>
-   </hints>
-  </connection>
- </connections>
+ <connections/>
 </ui>
