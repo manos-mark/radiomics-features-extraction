@@ -6,7 +6,7 @@ def open_dicom_image(self):
     dialog.setWindowTitle("Choose a dicom file to open")
     dialog.setDefaultSuffix('')
     dialog.setFileMode(QtWidgets.QFileDialog.ExistingFile)
-    dialog.setNameFilter(" All files (*);; Dicom Files (*.dcm,*.dicom);;Text (*.txt, *.csv)")
+    dialog.setNameFilter(" All files (*.nrrd);; Dicom Files (*.dcm,*.dicom)")
     dialog.setViewMode(QtWidgets.QFileDialog.Detail)
 
     if dialog.exec_():
@@ -25,7 +25,7 @@ def open_dicom_ROI(self):
     dialog.setWindowTitle("Choose a dicom file to open")
     dialog.setDefaultSuffix('')
     dialog.setFileMode(QtWidgets.QFileDialog.ExistingFile)
-    dialog.setNameFilter(" All files (*);; Dicom Files (*.dcm,*.dicom);;Text (*.txt, *.csv)")
+    dialog.setNameFilter(" All files (*.nrrd);; Dicom Files (*.dcm,*.dicom)")
     dialog.setViewMode(QtWidgets.QFileDialog.Detail)
 
     if dialog.exec_():
