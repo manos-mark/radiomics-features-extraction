@@ -26,12 +26,24 @@ class init_UI(QtWidgets.QMainWindow):
 
         self.tab_widget.tabBar().installEventFilter(self)
 
-        # Init back and next buttons
+        # Init push buttons
         self.next_btn = self.findChild(QtWidgets.QPushButton, 'next_btn')
         self.back_btn = self.findChild(QtWidgets.QPushButton, 'back_btn')
+        self.reset_btn = self.findChild(QtWidgets.QPushButton, 'reset_btn')
 
-        self.next_btn.clicked.connect(self.next_button_clicked)
-        self.back_btn.clicked.connect(self.back_button_clicked)
+        self.next_btn.clicked.connect(self._next_button_clicked)
+        self.back_btn.clicked.connect(self._back_button_clicked)
+        self.reset_btn.clicked.connect(self._reset_button_clicked)
+
+        # Init debug mode
+        self.debug_mode_checkbox = self.findChild(QtWidgets.QCheckBox, 'debug_mode_checkbox')
+        self.log_text_edit = self.findChild(QtWidgets.QTextEdit, 'log_text_edit')
+        self.log_label = self.findChild(QtWidgets.QLabel, 'log_label')
+
+        self.log_text_edit.setProperty('visible', False)
+        self.log_label.setProperty('visible', False)
+
+        self.debug_mode_checkbox.toggled.connect(self._debug_mode_checkbox_toggled)
 
     def _init_input_tab(self):
         self.input_tab = self.findChild(QtWidgets.QWidget, 'input_tab')
@@ -47,7 +59,7 @@ class init_UI(QtWidgets.QMainWindow):
             self.upload_image_btn.setProperty('enabled', True),
             self.upload_ROI_btn.setProperty('enabled', True),
             self.upload_csv_btn.setProperty('enabled', False),
-            self.clear_input()
+            self._clear_input()
         })
 
         self.batch_images_radio = self.findChild(QtWidgets.QRadioButton, 'batch_images_radio')
@@ -55,7 +67,7 @@ class init_UI(QtWidgets.QMainWindow):
             self.upload_image_btn.setProperty('enabled', False),
             self.upload_ROI_btn.setProperty('enabled', False),
             self.upload_csv_btn.setProperty('enabled', True),
-            self.clear_input()
+            self._clear_input()
         })
 
         # Init push buttons
@@ -66,6 +78,9 @@ class init_UI(QtWidgets.QMainWindow):
         self.upload_image_btn.clicked.connect(lambda l: open_dicom_image(self))
         self.upload_ROI_btn.clicked.connect(lambda l: open_dicom_ROI(self))
         self.upload_csv_btn.clicked.connect(lambda l: open_csv_file(self))
+
+        # Init path labels
+        self.label_image_path = self.findChild(QtWidgets.QLabel, 'label_image_path')
 
     def _init_settings_tab(self):
         self.settings_tab = self.findChild(QtWidgets.QWidget, 'settings_tab')
@@ -79,13 +94,7 @@ class init_UI(QtWidgets.QMainWindow):
             # standard event processing
             return super(init_UI, self).eventFilter(obj, event)
 
-    def clear_input(self):
-        self.image_file_path = None
-        self.ROI_file_path = None
-        self.csv_file_path = None
-        self.next_btn.setProperty('enabled', False)
-
-    def next_button_clicked(self):
+    def _next_button_clicked(self):
         if (self.image_file_path and self.ROI_file_path) or self.csv_file_path:
             tabs_count = self.tab_widget.count() - 1  # because it is not zero based
             # Go to the next tab if it exists
@@ -98,8 +107,7 @@ class init_UI(QtWidgets.QMainWindow):
                 # Enable back button
                 self.back_btn.setProperty('enabled', True)
 
-    def back_button_clicked(self):
-        tabs_count = self.tab_widget.count() - 1  # because it is not zero based
+    def _back_button_clicked(self):
         # Go to the previous tab if it exists
         if self.tab_widget.currentIndex() > 0:
             self.tab_widget.setTabVisible(self.tab_widget.currentIndex(), False)
@@ -109,6 +117,29 @@ class init_UI(QtWidgets.QMainWindow):
                 self.back_btn.setProperty('enabled', False)
             # Enable next button
             self.next_btn.setProperty('enabled', True)
+
+    def _debug_mode_checkbox_toggled(self):
+        self.log_text_edit.setProperty('visible', not self.log_text_edit.property('visible'))
+        self.log_label.setProperty('visible', not self.log_label.property('visible'))
+
+    def _reset_button_clicked(self):
+        self._clear_input()
+        self._hide_tabs()
+        self.log_text_edit.clear()
+
+    def _hide_tabs(self):
+        # Hide all tabs and move on the first one
+        tabs_count = self.tab_widget.count()  # because it is not zero based
+        for index in range(tabs_count):
+            self.tab_widget.setTabVisible(index + 1, False)
+        self.tab_widget.setCurrentIndex(0)
+
+    def _clear_input(self):
+        self.image_file_path = None
+        self.ROI_file_path = None
+        self.csv_file_path = None
+        self.next_btn.setProperty('enabled', False)
+        self.label_image_path.setText('')
 
 
 if __name__ == '__main__':
