@@ -7,3 +7,5 @@ pyradiomics>=2.2
 
 pyqt5~=5.15.0
 pandas~=1.0.1
+
+pydicom~=2.0.0
