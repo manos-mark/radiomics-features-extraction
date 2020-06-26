@@ -81,18 +81,11 @@ class init_UI(QtWidgets.QMainWindow):
 
         # Init path labels
         self.label_image_path = self.findChild(QtWidgets.QLabel, 'label_image_path')
+        self.label_ROI_path = self.findChild(QtWidgets.QLabel, 'label_ROI_path')
+        self.label_csv_path = self.findChild(QtWidgets.QLabel, 'label_csv_path')
 
     def _init_settings_tab(self):
         self.settings_tab = self.findChild(QtWidgets.QWidget, 'settings_tab')
-
-    def eventFilter(self, obj, event):
-        if event.type() == QtCore.QEvent.KeyPress and (event.key() == 16777217 or event.key() == 16777218):
-            return True  # eat alt+tab or alt+shift+tab key
-        if event.type() in (QtCore.QEvent.MouseButtonPress, QtCore.QEvent.MouseButtonDblClick):
-            return True  # eat mouse click
-        else:
-            # standard event processing
-            return super(init_UI, self).eventFilter(obj, event)
 
     def _next_button_clicked(self):
         if (self.image_file_path and self.ROI_file_path) or self.csv_file_path:
@@ -140,6 +133,17 @@ class init_UI(QtWidgets.QMainWindow):
         self.csv_file_path = None
         self.next_btn.setProperty('enabled', False)
         self.label_image_path.setText('')
+        self.label_ROI_path.setText('')
+        self.label_csv_path.setText('')
+
+    def eventFilter(self, obj, event):
+        if event.type() == QtCore.QEvent.KeyPress and (event.key() == 16777217 or event.key() == 16777218):
+            return True  # eat alt+tab or alt+shift+tab key
+        if event.type() in (QtCore.QEvent.MouseButtonPress, QtCore.QEvent.MouseButtonDblClick):
+            return True  # eat mouse click
+        else:
+            # standard event processing
+            return super(init_UI, self).eventFilter(obj, event)
 
 
 if __name__ == '__main__':
