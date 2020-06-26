@@ -26,6 +26,7 @@ class initUI(QtWidgets.QMainWindow):
         self.tab_widget = self.findChild(QtWidgets.QTabWidget, 'tabWidget')
         self.tab_widget.setTabVisible(0, True)
         self.tab_widget.setTabVisible(1, False)
+        self.tab_widget.setTabVisible(2, False)
 
         self.tab_widget.tabBar().installEventFilter(self)
 
@@ -109,7 +110,6 @@ class initUI(QtWidgets.QMainWindow):
             self.next_btn.setProperty('enabled', False)
 
     def _select_all_none_btn_clicked(self):
-        print(self.select_all_none_btn.text())
         if self.select_all_none_btn.text() == 'Select All':
             self.select_all_none_btn.setText('Select None')
             self.next_btn.setProperty('enabled', True)
@@ -133,15 +133,16 @@ class initUI(QtWidgets.QMainWindow):
         elif self.tab_widget.currentIndex() == 1:
             if self._is_any_feature_selected():
                 is_tab_ready = True
+                # Execute pyradiomics feature extraction
+                # exec('pyradiomics ' + self.image_file_path + ' ' + self.ROI_file_path)
 
         # Go to the next tab if it exists
         if is_tab_ready and (
                 self.tab_widget.currentIndex() < self.tab_widget.count() - 1):  # -1 because it is not zero based
             self.tab_widget.setTabVisible(self.tab_widget.currentIndex() + 1, True)
             self.tab_widget.setCurrentIndex(self.tab_widget.currentIndex() + 1)
-            # Disable next button if you are on the last tab
-            if self.tab_widget.currentIndex() == self.tab_widget.count() - 1:  # -1 because it is not zero based
-                self.next_btn.setProperty('enabled', False)
+            # Disable next button
+            self.next_btn.setProperty('enabled', False)
             # Enable back button
             self.back_btn.setProperty('enabled', True)
 
