@@ -24,8 +24,7 @@ def open_dicom_image(self):
         if self.ROI_file_path and self.image_file_path:
             self.next_btn.setProperty('enabled', True)
         return
-    else:
-        self.log_text_edit.append(f'dialog.exec modal window for image file selection failed')
+
     return -1
 
 
@@ -50,8 +49,7 @@ def open_dicom_ROI(self):
         if self.ROI_file_path and self.image_file_path:
             self.next_btn.setProperty('enabled', True)
         return
-    else:
-        self.log_text_edit.append(f'dialog.exec modal window for ROI file selection failed')
+
     return -1
 
 
@@ -74,8 +72,7 @@ def open_csv_file(self):
         self.csv_file_path = str(file_name[0])
         self.next_btn.setProperty('enabled', True)
         return
-    else:
-        self.log_text_edit.append(f'dialog.exec modal window for CSV file selection failed')
+
     return -1
 
 

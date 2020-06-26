@@ -4,9 +4,12 @@ from ui.utils.popups import *
 import sys
 
 
-class init_UI(QtWidgets.QMainWindow):
+class initUI(QtWidgets.QMainWindow):
+
+    features = ['first_order', 'glcm', 'gldm', 'glrlm', 'glszm', 'ngtdm', 'shape', 'shape_2D']
+
     def __init__(self):
-        super(init_UI, self).__init__()  # Call the inherited classes __init__ method
+        super(initUI, self).__init__()  # Call the inherited classes __init__ method
         uic.loadUi('radiomics-feature-extractor.ui', self)  # Load the .ui file
 
         # Initialize main window
@@ -87,18 +90,62 @@ class init_UI(QtWidgets.QMainWindow):
     def _init_settings_tab(self):
         self.settings_tab = self.findChild(QtWidgets.QWidget, 'settings_tab')
 
+        # Initialize variables
+        self.is_any_feature_checkbox_selected = False
+
+        # Initialize checkboxes
+        for feature in self.features:
+            self.__setattr__('checkbox_' + feature, self.findChild(QtWidgets.QCheckBox, 'checkbox_' + feature))
+            self.__getattribute__('checkbox_' + feature).toggled.connect(self._feature_checkbox_toggled)
+
+        # Initialize buttons
+        self.select_all_none_btn = self.findChild(QtWidgets.QPushButton, 'select_all_none_btn')
+        self.select_all_none_btn.clicked.connect(self._select_all_none_btn_clicked)
+
+    def _feature_checkbox_toggled(self):
+        if self._is_any_feature_selected():
+            self.next_btn.setProperty('enabled', True)
+        else:
+            self.next_btn.setProperty('enabled', False)
+
+    def _select_all_none_btn_clicked(self):
+        print(self.select_all_none_btn.text())
+        if self.select_all_none_btn.text() == 'Select All':
+            self.select_all_none_btn.setText('Select None')
+            self.next_btn.setProperty('enabled', True)
+            for feature in self.features:
+                self.__getattribute__('checkbox_' + feature).setProperty('checked', True)
+        else:
+            self.select_all_none_btn.setText('Select All')
+            self.next_btn.setProperty('enabled', False)
+            for feature in self.features:
+                self.__getattribute__('checkbox_' + feature).setProperty('checked', False)
+
     def _next_button_clicked(self):
-        if (self.image_file_path and self.ROI_file_path) or self.csv_file_path:
-            tabs_count = self.tab_widget.count() - 1  # because it is not zero based
-            # Go to the next tab if it exists
-            if self.tab_widget.currentIndex() < tabs_count:
-                self.tab_widget.setTabVisible(self.tab_widget.currentIndex() + 1, True)
-                self.tab_widget.setCurrentIndex(self.tab_widget.currentIndex() + 1)
-                # Disable next button if you are on the last tab
-                if self.tab_widget.currentIndex() == tabs_count:
-                    self.next_btn.setProperty('enabled', False)
-                # Enable back button
-                self.back_btn.setProperty('enabled', True)
+        is_tab_ready = False  # The requirements for each tabs are different
+
+        # Input tab
+        if self.tab_widget.currentIndex() == 0:
+            if (self.image_file_path and self.ROI_file_path) or self.csv_file_path:
+                is_tab_ready = True
+
+        # Settings tab
+        elif self.tab_widget.currentIndex() == 1:
+            if self._is_any_feature_selected():
+                is_tab_ready = True
+
+        # Go to the next tab if it exists
+        if is_tab_ready and (
+                self.tab_widget.currentIndex() < self.tab_widget.count() - 1):  # -1 because it is not zero based
+            self.tab_widget.setTabVisible(self.tab_widget.currentIndex() + 1, True)
+            self.tab_widget.setCurrentIndex(self.tab_widget.currentIndex() + 1)
+            # Disable next button if you are on the last tab
+            if self.tab_widget.currentIndex() == self.tab_widget.count() - 1:  # -1 because it is not zero based
+                self.next_btn.setProperty('enabled', False)
+            # Enable back button
+            self.back_btn.setProperty('enabled', True)
+
+        is_tab_ready = False
 
     def _back_button_clicked(self):
         # Go to the previous tab if it exists
@@ -136,6 +183,13 @@ class init_UI(QtWidgets.QMainWindow):
         self.label_ROI_path.setText('')
         self.label_csv_path.setText('')
 
+    def _is_any_feature_selected(self):
+        for feature in self.features:
+            feature_checkbox = self.__getattribute__('checkbox_' + feature)
+            if feature_checkbox.property('checked'):
+                return True
+        return False
+
     def eventFilter(self, obj, event):
         if event.type() == QtCore.QEvent.KeyPress and (event.key() == 16777217 or event.key() == 16777218):
             return True  # eat alt+tab or alt+shift+tab key
@@ -143,10 +197,10 @@ class init_UI(QtWidgets.QMainWindow):
             return True  # eat mouse click
         else:
             # standard event processing
-            return super(init_UI, self).eventFilter(obj, event)
+            return super(initUI, self).eventFilter(obj, event)
 
 
 if __name__ == '__main__':
     app = QtWidgets.QApplication(sys.argv)
-    view = init_UI()
+    view = initUI()
     app.exec_()

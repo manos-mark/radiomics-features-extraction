@@ -72,7 +72,7 @@
      <bool>false</bool>
     </property>
     <property name="currentIndex">
-     <number>0</number>
+     <number>1</number>
     </property>
     <property name="documentMode">
      <bool>false</bool>
@@ -509,58 +509,65 @@
        </property>
        <layout class="QVBoxLayout" name="verticalLayout">
         <item>
-         <widget class="QCheckBox" name="checkBox_4">
+         <widget class="QCheckBox" name="checkbox_first_order">
           <property name="text">
            <string>first order</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QCheckBox" name="checkBox_8">
+         <widget class="QCheckBox" name="checkbox_glcm">
           <property name="text">
            <string>glcm</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QCheckBox" name="checkBox_9">
+         <widget class="QCheckBox" name="checkbox_gldm">
           <property name="text">
            <string>gldm</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QCheckBox" name="checkBox_7">
+         <widget class="QCheckBox" name="checkbox_glrlm">
           <property name="text">
            <string>glrlm</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QCheckBox" name="checkBox_6">
+         <widget class="QCheckBox" name="checkbox_glszm">
           <property name="text">
            <string>glszm</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QCheckBox" name="checkBox_5">
+         <widget class="QCheckBox" name="checkbox_ngtdm">
           <property name="text">
            <string>ngtdm</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QCheckBox" name="checkBox_3">
+         <widget class="QCheckBox" name="checkbox_shape">
           <property name="text">
            <string>shape</string>
           </property>
          </widget>
         </item>
         <item>
-         <widget class="QCheckBox" name="checkBox_2">
+         <widget class="QCheckBox" name="checkbox_shape_2D">
           <property name="text">
            <string>shape2D</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <widget class="QPushButton" name="select_all_none_btn">
+          <property name="text">
+           <string>Select All</string>
           </property>
          </widget>
         </item>
@@ -568,6 +575,9 @@
       </widget>
      </widget>
      <widget class="QGroupBox" name="groupBox_2">
+      <property name="enabled">
+       <bool>false</bool>
+      </property>
       <property name="geometry">
        <rect>
         <x>280</x>
