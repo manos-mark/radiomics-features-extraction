@@ -20,6 +20,7 @@ class initUI(QtWidgets.QMainWindow):
         self._init_input_tab()
         self._init_settings_tab()
         self._init_features_tab()
+        self._init_feature_analysis_tab()
 
         self.show()  # Show the GUI
 
@@ -29,6 +30,7 @@ class initUI(QtWidgets.QMainWindow):
         self.tab_widget.setTabVisible(0, True)
         self.tab_widget.setTabVisible(1, False)
         self.tab_widget.setTabVisible(2, False)
+        self.tab_widget.setTabVisible(3, False)
 
         # Disable click on the widget bar using the eventFilter
         self.tab_widget.tabBar().installEventFilter(self)
@@ -106,9 +108,16 @@ class initUI(QtWidgets.QMainWindow):
         self.select_all_none_btn.clicked.connect(self.select_all_none_btn_clicked)
 
     def _init_features_tab(self):
-        self.table_view = self.findChild(QtWidgets.QTableView, 'table_view')
-        self.model = QtGui.QStandardItemModel(self)
-        self.table_view.setModel(self.model)
+        self.extracted_features_table_view = self.findChild(QtWidgets.QTableView, 'extracted_features_table_view')
+        self.extracted_features_model = QtGui.QStandardItemModel(self)
+        self.extracted_features_table_view.setModel(self.extracted_features_model)
+
+    def _init_feature_analysis_tab(self):
+        self.feature_importance_column_view = self.findChild(QtWidgets.QColumnView, 'feature_importance_column_view')
+
+        self.feature_importance_model = QtGui.QStandardItemModel(self)
+        self.feature_importance_column_view.setModel(self.feature_importance_model)
+
 
     @QtCore.pyqtSlot()
     def feature_checkbox_toggled(self):
@@ -182,6 +191,9 @@ class initUI(QtWidgets.QMainWindow):
         # Settings tab
         elif self.tab_widget.currentIndex() == 1:
             return self._is_any_feature_selected()
+        # Features tab
+        elif self.tab_widget.currentIndex() == 2:
+            return True
 
     def _hide_tabs(self):
         # Hide all tabs and move on the first one
