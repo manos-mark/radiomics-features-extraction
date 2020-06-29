@@ -6,20 +6,14 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>1313</width>
-    <height>754</height>
+    <width>1447</width>
+    <height>909</height>
    </rect>
   </property>
   <property name="minimumSize">
    <size>
     <width>1010</width>
     <height>754</height>
-   </size>
-  </property>
-  <property name="maximumSize">
-   <size>
-    <width>1920</width>
-    <height>1980</height>
    </size>
   </property>
   <property name="windowTitle">
@@ -42,12 +36,6 @@
     <size>
      <width>800</width>
      <height>600</height>
-    </size>
-   </property>
-   <property name="maximumSize">
-    <size>
-     <width>1920</width>
-     <height>1080</height>
     </size>
    </property>
    <layout class="QGridLayout" name="gridLayout">
@@ -132,44 +120,13 @@
       </item>
      </layout>
     </item>
-    <item row="1" column="2">
-     <widget class="QTextEdit" name="log_text_edit">
-      <property name="sizePolicy">
-       <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
-        <horstretch>0</horstretch>
-        <verstretch>0</verstretch>
-       </sizepolicy>
-      </property>
-      <property name="minimumSize">
-       <size>
-        <width>350</width>
-        <height>0</height>
-       </size>
-      </property>
-      <property name="readOnly">
-       <bool>true</bool>
-      </property>
-     </widget>
-    </item>
-    <item row="0" column="2">
-     <widget class="QLabel" name="log_label">
-      <property name="font">
-       <font>
-        <pointsize>14</pointsize>
-       </font>
-      </property>
-      <property name="text">
-       <string>Debug Logs</string>
-      </property>
-     </widget>
-    </item>
     <item row="0" column="0" rowspan="2" colspan="2">
      <widget class="QTabWidget" name="tabWidget">
       <property name="enabled">
        <bool>true</bool>
       </property>
       <property name="sizePolicy">
-       <sizepolicy hsizetype="Preferred" vsizetype="Fixed">
+       <sizepolicy hsizetype="Preferred" vsizetype="Preferred">
         <horstretch>0</horstretch>
         <verstretch>0</verstretch>
        </sizepolicy>
@@ -178,12 +135,6 @@
        <size>
         <width>800</width>
         <height>600</height>
-       </size>
-      </property>
-      <property name="maximumSize">
-       <size>
-        <width>1920</width>
-        <height>1080</height>
        </size>
       </property>
       <property name="cursor">
@@ -617,81 +568,75 @@
           <property name="title">
            <string>Select Features</string>
           </property>
-          <widget class="QWidget" name="verticalLayoutWidget">
-           <property name="geometry">
-            <rect>
-             <x>10</x>
-             <y>30</y>
-             <width>201</width>
-             <height>391</height>
-            </rect>
-           </property>
-           <layout class="QVBoxLayout" name="verticalLayout">
-            <item>
-             <widget class="QCheckBox" name="checkbox_first_order">
-              <property name="text">
-               <string>first order</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QCheckBox" name="checkbox_glcm">
-              <property name="text">
-               <string>glcm</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QCheckBox" name="checkbox_gldm">
-              <property name="text">
-               <string>gldm</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QCheckBox" name="checkbox_glrlm">
-              <property name="text">
-               <string>glrlm</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QCheckBox" name="checkbox_glszm">
-              <property name="text">
-               <string>glszm</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QCheckBox" name="checkbox_ngtdm">
-              <property name="text">
-               <string>ngtdm</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QCheckBox" name="checkbox_shape">
-              <property name="text">
-               <string>shape</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QCheckBox" name="checkbox_shape_2D">
-              <property name="text">
-               <string>shape2D</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <widget class="QPushButton" name="select_all_none_btn">
-              <property name="text">
-               <string>Select All</string>
-              </property>
-             </widget>
-            </item>
-           </layout>
-          </widget>
+          <layout class="QGridLayout" name="gridLayout_5">
+           <item row="0" column="0">
+            <layout class="QVBoxLayout" name="verticalLayout">
+             <item>
+              <widget class="QCheckBox" name="checkbox_first_order">
+               <property name="text">
+                <string>first order</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QCheckBox" name="checkbox_glcm">
+               <property name="text">
+                <string>glcm</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QCheckBox" name="checkbox_gldm">
+               <property name="text">
+                <string>gldm</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QCheckBox" name="checkbox_glrlm">
+               <property name="text">
+                <string>glrlm</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QCheckBox" name="checkbox_glszm">
+               <property name="text">
+                <string>glszm</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QCheckBox" name="checkbox_ngtdm">
+               <property name="text">
+                <string>ngtdm</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QCheckBox" name="checkbox_shape">
+               <property name="text">
+                <string>shape</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QCheckBox" name="checkbox_shape_2D">
+               <property name="text">
+                <string>shape2D</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <widget class="QPushButton" name="select_all_none_btn">
+               <property name="text">
+                <string>Select All</string>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
          </widget>
         </item>
         <item row="3" column="1" colspan="2">
@@ -708,76 +653,62 @@
           <property name="title">
            <string>Resampling and Filtering</string>
           </property>
-          <widget class="QWidget" name="horizontalLayoutWidget_6">
-           <property name="geometry">
-            <rect>
-             <x>10</x>
-             <y>30</y>
-             <width>733</width>
-             <height>51</height>
-            </rect>
-           </property>
-           <layout class="QHBoxLayout" name="horizontalLayout_6">
-            <item>
-             <widget class="QLabel" name="label_7">
-              <property name="text">
-               <string>Resampled voxel size</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <spacer name="horizontalSpacer_5">
-              <property name="orientation">
-               <enum>Qt::Horizontal</enum>
-              </property>
-              <property name="sizeHint" stdset="0">
-               <size>
-                <width>40</width>
-                <height>20</height>
-               </size>
-              </property>
-             </spacer>
-            </item>
-            <item>
-             <widget class="QSpinBox" name="spinBox"/>
-            </item>
-           </layout>
-          </widget>
-          <widget class="QWidget" name="horizontalLayoutWidget_7">
-           <property name="geometry">
-            <rect>
-             <x>10</x>
-             <y>90</y>
-             <width>641</width>
-             <height>51</height>
-            </rect>
-           </property>
-           <layout class="QHBoxLayout" name="horizontalLayout_7">
-            <item>
-             <widget class="QLabel" name="label_8">
-              <property name="text">
-               <string>Log kernel sizes</string>
-              </property>
-             </widget>
-            </item>
-            <item>
-             <spacer name="horizontalSpacer_6">
-              <property name="orientation">
-               <enum>Qt::Horizontal</enum>
-              </property>
-              <property name="sizeHint" stdset="0">
-               <size>
-                <width>40</width>
-                <height>20</height>
-               </size>
-              </property>
-             </spacer>
-            </item>
-            <item>
-             <widget class="QSpinBox" name="spinBox_2"/>
-            </item>
-           </layout>
-          </widget>
+          <layout class="QGridLayout" name="gridLayout_6">
+           <item row="0" column="0">
+            <layout class="QHBoxLayout" name="horizontalLayout_6">
+             <item>
+              <widget class="QLabel" name="label_7">
+               <property name="text">
+                <string>Resampled voxel size</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_5">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QSpinBox" name="spinBox"/>
+             </item>
+            </layout>
+           </item>
+           <item row="1" column="0">
+            <layout class="QHBoxLayout" name="horizontalLayout_7">
+             <item>
+              <widget class="QLabel" name="label_8">
+               <property name="text">
+                <string>Log kernel sizes</string>
+               </property>
+              </widget>
+             </item>
+             <item>
+              <spacer name="horizontalSpacer_6">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QSpinBox" name="spinBox_2"/>
+             </item>
+            </layout>
+           </item>
+          </layout>
          </widget>
         </item>
        </layout>
@@ -826,6 +757,41 @@
       </widget>
      </widget>
     </item>
+    <item row="0" column="2">
+     <layout class="QGridLayout" name="gridLayout_8">
+      <item row="0" column="0">
+       <widget class="QLabel" name="log_label">
+        <property name="font">
+         <font>
+          <pointsize>14</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>Debug Logs</string>
+        </property>
+       </widget>
+      </item>
+      <item row="1" column="0">
+       <widget class="QTextEdit" name="log_text_edit">
+        <property name="sizePolicy">
+         <sizepolicy hsizetype="Preferred" vsizetype="Expanding">
+          <horstretch>0</horstretch>
+          <verstretch>0</verstretch>
+         </sizepolicy>
+        </property>
+        <property name="minimumSize">
+         <size>
+          <width>350</width>
+          <height>0</height>
+         </size>
+        </property>
+        <property name="readOnly">
+         <bool>true</bool>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
    </layout>
   </widget>
   <widget class="QMenuBar" name="menubar">
@@ -833,8 +799,8 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>1313</width>
-     <height>23</height>
+     <width>1447</width>
+     <height>26</height>
     </rect>
    </property>
   </widget>
