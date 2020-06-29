@@ -1,10 +1,25 @@
 import os
 
 from PyQt5 import QtWidgets
+from PyQt5.QtWidgets import QFileDialog
+
+
+class CustomFileDialog(QFileDialog):
+
+    def __init__(self, *args, **kwargs):
+        super(CustomFileDialog, self).__init__(*args, **kwargs)
+
+        dialog = QtWidgets.QFileDialog()
+        dialog.setWindowTitle("Choose a dicom file to open")
+        dialog.setDefaultSuffix('')
+        dialog.setFileMode(QtWidgets.QFileDialog.ExistingFile)
+        dialog.setNameFilter(" All files (*.nrrd);; Dicom Files (*.dcm,*.dicom)")
+        dialog.setViewMode(QtWidgets.QFileDialog.Detail)
 
 
 def open_dicom_image(self):
-    dialog = open_dialog()
+    dialog = CustomFileDialog(self)
+    dialog.show()
 
     if dialog.exec_():
         file_name = dialog.selectedFiles()
@@ -29,7 +44,8 @@ def open_dicom_image(self):
 
 
 def open_dicom_ROI(self):
-    dialog = open_dialog()
+    dialog = CustomFileDialog(self)
+    dialog.show()
 
     if dialog.exec_():
         file_name = dialog.selectedFiles()
@@ -54,8 +70,9 @@ def open_dicom_ROI(self):
 
 
 def open_csv_file(self):
-    dialog = open_dialog()
+    dialog = CustomFileDialog(self)
     dialog.setNameFilter("Text (*.txt, *.csv)")
+    dialog.show()
 
     if dialog.exec_():
         file_name = dialog.selectedFiles()
@@ -74,13 +91,3 @@ def open_csv_file(self):
         return
 
     return -1
-
-
-def open_dialog():
-    dialog = QtWidgets.QFileDialog()
-    dialog.setWindowTitle("Choose a dicom file to open")
-    dialog.setDefaultSuffix('')
-    dialog.setFileMode(QtWidgets.QFileDialog.ExistingFile)
-    dialog.setNameFilter(" All files (*.nrrd);; Dicom Files (*.dcm,*.dicom)")
-    dialog.setViewMode(QtWidgets.QFileDialog.Detail)
-    return dialog
