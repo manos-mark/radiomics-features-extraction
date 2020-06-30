@@ -1,6 +1,6 @@
 import csv
 import os
-import pandas as pd
+# import pandas as pd
 from PyQt5 import QtGui
 
 
@@ -15,6 +15,6 @@ def pyradiomics_extraction(self, image, label, csv_file):
     with open('results.csv', "r") as fileInput:
         for row in csv.reader(fileInput):
             items = [QtGui.QStandardItem(field) for field in row]
-            self.model.appendRow(items)
+            self.extracted_features_model.appendRow(items)
 
     os.system('rm results.csv')
