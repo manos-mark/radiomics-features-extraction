@@ -59,7 +59,7 @@ class initUI(QtWidgets.QMainWindow):
         # Initialize variables
         self.image_file_path = None
         self.ROI_file_path = None
-        self.csv_file_path = None
+        self.dataset_path = None
 
         # Init radio buttons
         self.single_image_radio = self.findChild(QtWidgets.QRadioButton, 'single_image_radio')
@@ -148,7 +148,7 @@ class initUI(QtWidgets.QMainWindow):
             # Settings tab
             if self.tab_widget.currentIndex() == 1:
                 # Execute pyradiomics feature extraction
-                pyradiomics_extraction(self, self.image_file_path, self.ROI_file_path, self.csv_file_path)
+                pyradiomics_extraction(self, self.image_file_path, self.ROI_file_path, self.dataset_path)
 
             # Go to the next tab if exists
             if self.tab_widget.currentIndex() < self.tab_widget.count() - 1:  # -1 because it is not zero based
@@ -187,7 +187,7 @@ class initUI(QtWidgets.QMainWindow):
     def _is_tab_ready(self):
         # Input tab
         if self.tab_widget.currentIndex() == 0:
-            return (self.image_file_path and self.ROI_file_path) or self.csv_file_path
+            return (self.image_file_path and self.ROI_file_path) or self.dataset_path
         # Settings tab
         elif self.tab_widget.currentIndex() == 1:
             return self._is_any_feature_selected()
@@ -205,7 +205,7 @@ class initUI(QtWidgets.QMainWindow):
     def _clear_input(self):
         self.image_file_path = None
         self.ROI_file_path = None
-        self.csv_file_path = None
+        self.dataset_path = None
         self.next_btn.setProperty('enabled', False)
         self.label_image_path.setText('')
         self.label_ROI_path.setText('')
