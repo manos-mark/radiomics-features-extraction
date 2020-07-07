@@ -33,7 +33,24 @@ imageType:
 featureClass:
   # redundant Compactness 1, Compactness 2 an Spherical Disproportion features are disabled by default, they can be
   # enabled by specifying individual feature names (as is done for glcm) and including them in the list.
-  shape:
+  shape:  # disable redundant Compactness 1 and Compactness 2 features by specifying all other shape features
+    - VoxelVolume
+    - MeshVolume
+    - SurfaceArea
+    - SurfaceVolumeRatio
+#    - Compactness1
+#    - Compactness2
+    - Sphericity
+#    - SphericalDisproportion
+    - Maximum3DDiameter
+    - Maximum2DDiameterSlice
+    - Maximum2DDiameterColumn
+    - Maximum2DDiameterRow
+    - MajorAxisLength
+    - MinorAxisLength
+    - LeastAxisLength
+    - Elongation
+    - Flatness
   firstorder: [] # specifying an empty list has the same effect as specifying nothing.
   glcm:  # Disable SumAverage by specifying all other GLCM features available
     - 'Autocorrelation'

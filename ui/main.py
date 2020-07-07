@@ -136,7 +136,7 @@ class initUI(QtWidgets.QMainWindow):
         else:
             self.select_all_none_btn.setText('Select All')
             self.next_btn.setProperty('enabled', False)
-            for feature in self.features:
+            for feature in self.features: 
                 self.__getattribute__('checkbox_' + feature).setProperty('checked', False)
 
     @QtCore.pyqtSlot()

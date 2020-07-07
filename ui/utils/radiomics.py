@@ -6,9 +6,9 @@ from PyQt5 import QtGui
 
 def pyradiomics_extraction(self, image, label, dataset_path):
     if image and label:
-        os.system('pyradiomics ' + image + ' ' + label + ' -o results.csv -f csv')
+        os.system('pyradiomics ' + image + ' ' + label + ' --param ../settings/Params.yaml -o results.csv -f csv')
     elif dataset_path:
-        os.system('pyradiomics ' + dataset_path + ' -o results.csv -f csv')
+        os.system('pyradiomics ' + dataset_path + ' --param ../settings/Params.yaml -o results.csv -f csv')
     else:
         return
 
