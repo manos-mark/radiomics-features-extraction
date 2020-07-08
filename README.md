@@ -13,8 +13,7 @@ In the `/notebooks` folder there is example code for some basic "how to use pyra
 ![alt text](https://healthcare-in-europe.com/media/story_section_image/3188/image-01-picture-radiomics-workflow.jpg)
 
 ## 1.0 Image Acquisition and Segmentation
-  The data consist of two folders:
-  - `input-images` from [pyradiomics](https://github.com/Radiomics/pyradiomics/tree/master/data) project.
+  The dataset consists of medical (.nrrd) images from [pyradiomics](https://github.com/Radiomics/pyradiomics/tree/master/data). You can find it in the folder `data/input-images/patients`, for each patient there is a subfolder including all the test cases. Each test case consists of one image and one mask (ROI).
   
 ## 2.0 Feature extraction 
   In this section we will focus on feature extraction from a single image or a batch of images. For this project our masks (ROI) are already segmented. Detailed description on feature classes and individual features is provided in section [Radiomic Features](https://pyradiomics.readthedocs.io/en/latest/features.html#radiomics-features-label) of the documentation.
