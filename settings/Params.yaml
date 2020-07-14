@@ -120,7 +120,7 @@ setting:
   ############################################### -2- Filter Level #####################################################
 
   # Laplacian of Gaussian settings
-  sigma: [1] # List of floats or integers, must be greater than 0. Sigma values to use for the filter (determines coarseness).
+#  sigma: [1] # List of floats or integers, must be greater than 0. Sigma values to use for the filter (determines coarseness).
 
   # !!! Warning !!!
   # Setting for sigma must be provided if LoG filter is enabled. If omitted, no LoG image features are calculated and
@@ -128,43 +128,43 @@ setting:
   # !!!!!!!!!!!!!!!
 
   # Wavelet settings
-  start_level: 0 # [0]: integer, 0 based level of wavelet which should be used as first set of decompositions from which a
-                 # signature is calculated
-
-  level: 1 # [1]: integer, number of levels of wavelet decompositions from which a signature is calculated.
-
-  wavelet: 'coif1' # [“coif1”]: string, type of wavelet decomposition. Enumerated value, validated against possible values
-           # present in the pyWavelet.wavelist(). Current possible values (pywavelet version 0.4.0) (where an aditional
-           # number is needed, range of values is indicated in []):
-                       # - haar
-                       # - dmey
-                       # - sym[2-20]
-                       # - db[1-20]
-                       # - coif[1-5]
-                       # - bior[1.1, 1.3, 1.5, 2.2, 2.4, 2.6, 2.8, 3.1, 3.3, 3.5, 3.7, 3.9, 4.4, 5.5, 6.8]
-                       # - rbio[1.1, 1.3, 1.5, 2.2, 2.4, 2.6, 2.8, 3.1, 3.3, 3.5, 3.7, 3.9, 4.4, 5.5, 6.8]
+#  start_level: 0 # [0]: integer, 0 based level of wavelet which should be used as first set of decompositions from which a
+#                 # signature is calculated
+#
+#  level: 1 # [1]: integer, number of levels of wavelet decompositions from which a signature is calculated.
+#
+#  wavelet: 'coif1' # [“coif1”]: string, type of wavelet decomposition. Enumerated value, validated against possible values
+#           # present in the pyWavelet.wavelist(). Current possible values (pywavelet version 0.4.0) (where an aditional
+#           # number is needed, range of values is indicated in []):
+#                       # - haar
+#                       # - dmey
+#                       # - sym[2-20]
+#                       # - db[1-20]
+#                       # - coif[1-5]
+#                       # - bior[1.1, 1.3, 1.5, 2.2, 2.4, 2.6, 2.8, 3.1, 3.3, 3.5, 3.7, 3.9, 4.4, 5.5, 6.8]
+#                       # - rbio[1.1, 1.3, 1.5, 2.2, 2.4, 2.6, 2.8, 3.1, 3.3, 3.5, 3.7, 3.9, 4.4, 5.5, 6.8]
 
   # Gradient settings
-  gradientUseSpacing: True # [True]: Boolean, if true, image spacing is taken into account when computing the gradient
-                           # magnitude in the image.
+#  gradientUseSpacing: True # [True]: Boolean, if true, image spacing is taken into account when computing the gradient
+#                           # magnitude in the image.
 
   # Local Binary Pattern 2D
-  lbp2DRadius:  # [1]: Float, > 0, specifies the radius in which the neighbours should be sampled
-  lbp2DSamples: # [9]: Integer, ≥1, specifies the number of samples to use
-  lbp2DMethod:  # [‘uniform’]: String, specifies the method for computing the LBP to use.
-
-  # !!! Warning !!!
-  # Requires package skimage to function.
-  # !!!!!!!!!!!!!!!
+#  lbp2DRadius:  # [1]: Float, > 0, specifies the radius in which the neighbours should be sampled
+#  lbp2DSamples: # [9]: Integer, ≥1, specifies the number of samples to use
+#  lbp2DMethod:  # [‘uniform’]: String, specifies the method for computing the LBP to use.
+#
+#  # !!! Warning !!!
+#  # Requires package skimage to function.
+#  # !!!!!!!!!!!!!!!
 
   #Local Binary Pattern 3D
-  lbp3DLevels: 2               # [2]: integer, ≥1, specifies the the number of levels in spherical harmonics to use.
-  lbp3DIcosphereRadius: 1      # [1]: Float, > 0, specifies the radius in which the neighbours should be sampled
-  lbp3DIcosphereSubdivision: 1 # [1]: Integer, ≥0, specifies the number of subdivisions to apply in the icosphere
-
-  # !!! Warning !!!
-  # Requires package scipy and trimesh to function.
-  # !!!!!!!!!!!!!!!
+#  lbp3DLevels: 2               # [2]: integer, ≥1, specifies the the number of levels in spherical harmonics to use.
+#  lbp3DIcosphereRadius: 1      # [1]: Float, > 0, specifies the radius in which the neighbours should be sampled
+#  lbp3DIcosphereSubdivision: 1 # [1]: Integer, ≥0, specifies the number of subdivisions to apply in the icosphere
+#
+#  # !!! Warning !!!
+#  # Requires package scipy and trimesh to function.
+#  # !!!!!!!!!!!!!!!
   ######################################################################################################################
 
 
@@ -262,31 +262,94 @@ setting:
 
 # Image types to use: for dictionaries / mappings, None values are not allowed, '{}' is interpreted as an empty dictionary
 imageType:
-  Original: {} # No filter applied
+  # No filter applied
+  Original: {}
 
-  Wavelet: {} # Wavelet filtering, yields 8 decompositions per level (all possible combinations of applying either a
-              # High or a Low pass filter in each of the three dimensions. See also getWaveletImage()
+  # Wavelet filtering, yields 8 decompositions per level (all possible combinations of applying either a
+  # High or a Low pass filter in each of the three dimensions. See also getWaveletImage()
+  Wavelet: {
+    # [0]: integer, 0 based level of wavelet which should be used as first set of decompositions from which a
+    # signature is calculated
+    start_level: 0,
 
-  LoG: {}     # Laplacian of Gaussian filter, edge enhancement filter. Emphasizes areas of gray level change, where
-              # sigma defines how coarse the emphasised texture should be. A low sigma emphasis on fine textures
-              # (change over a short distance), where a high sigma value emphasises coarse textures (gray level change
-              # over a large distance). See also getLoGImage()
+      # [1]: integer, number of levels of wavelet decompositions from which a signature is calculated.
+      level: 1,
 
-  Square: {}  # Takes the square of the image intensities and linearly scales them back to the original range.
-              # Negative values in the original image will be made negative again after application of filter.
+    # [“coif1”]: string, type of wavelet decomposition. Enumerated value, validated against possible values
+    # present in the pyWavelet.wavelist(). Current possible values (pywavelet version 0.4.0) (where an aditional
+    # number is needed, range of values is indicated in []):
+                    # - haar
+                    # - dmey
+                    # - sym[2-20]
+                    # - db[1-20]
+                    # - coif[1-5]
+                    # - bior[1.1, 1.3, 1.5, 2.2, 2.4, 2.6, 2.8, 3.1, 3.3, 3.5, 3.7, 3.9, 4.4, 5.5, 6.8]
+                    # - rbio[1.1, 1.3, 1.5, 2.2, 2.4, 2.6, 2.8, 3.1, 3.3, 3.5, 3.7, 3.9, 4.4, 5.5, 6.8]
+      wavelet: 'coif1',
+  }
 
-  SquareRoot: {} # Takes the square root of the absolute image intensities and scales them back to original range.
-                 # Negative values in the original image will be made negative again after application of filter.
+  # Laplacian of Gaussian filter, edge enhancement filter. Emphasizes areas of gray level change, where
+  # sigma defines how coarse the emphasised texture should be. A low sigma emphasis on fine textures
+  # (change over a short distance), where a high sigma value emphasises coarse textures (gray level change
+  # over a large distance). See also getLoGImage()
+  LoG: {
+    # List of floats or integers, must be greater than 0.
+    # Sigma values to use for the filter (determines coarseness).
+    sigma: [1]
+  }
 
-  Logarithm: {} # Takes the logarithm of the absolute intensity + 1. Values are scaled to original range and negative
-                # original values are made negative again after application of filter.
+  # Takes the square of the image intensities and linearly scales them back to the original range.
+  # Negative values in the original image will be made negative again after application of filter.
+  Square: {}
 
-  Exponential: {} # Takes the the exponential, where filtered intensity is e^(absolute intensity). Values are scaled to
-                  # original range and negative original values are made negative again after application of filter.
+  # Takes the square root of the absolute image intensities and scales them back to original range.
+  # Negative values in the original image will be made negative again after application of filter.
+  SquareRoot: {}
 
-  Gradient: {} # Returns the magnitude of the local gradient. See also getGradientImage()
-#  LBP2D: {} # Computes the Local Binary Pattern in a by-slice operation (2D). See also getLBP2DImage()
-  LBP3D: {} # Computes the Local Binary Pattern in 3D using spherical harmonics. See also getLBP3DImage()
+  # Takes the logarithm of the absolute intensity + 1. Values are scaled to original range and negative
+  # original values are made negative again after application of filter.
+  Logarithm: {}
+
+  # Takes the the exponential, where filtered intensity is e^(absolute intensity). Values are scaled to
+  # original range and negative original values are made negative again after application of filter.
+  Exponential: {}
+
+  # Returns the magnitude of the local gradient. See also getGradientImage()
+  Gradient: {
+    # [True]: Boolean, if true, image spacing is taken into account when computing the gradient
+    # magnitude in the image.
+    gradientUseSpacing: True
+  }
+
+  # Computes the Local Binary Pattern in a by-slice operation (2D). See also getLBP2DImage()
+  # !!! Warning !!!
+  # Requires package skimage to function.
+  # !!!!!!!!!!!!!!!
+  LBP2D: {
+    # [1]: Float, > 0, specifies the radius in which the neighbours should be sampled
+    lbp2DRadius: 1,
+
+    # [9]: Integer, ≥1, specifies the number of samples to use
+    lbp2DSamples: 9,
+
+    # [‘uniform’]: String, specifies the method for computing the LBP to use.
+    lbp2DMethod: 'uniform'
+  }
+
+  # Computes the Local Binary Pattern in 3D using spherical harmonics. See also getLBP3DImage()
+  # !!! Warning !!!
+  # Requires package scipy and trimesh to function.
+  # !!!!!!!!!!!!!!!
+  LBP3D: {
+    # [2]: integer, ≥1, specifies the the number of levels in spherical harmonics to use.
+    lbp3DLevels: 2,
+
+    # [1]: Float, > 0, specifies the radius in which the neighbours should be sampled
+    lbp3DIcosphereRadius: 1,
+
+    # [1]: Integer, ≥0, specifies the number of subdivisions to apply in the icosphere
+    lbp3DIcosphereSubdivision: 1,
+  }
 
 # Featureclasses, from which features must be calculated. If a featureclass is not mentioned, no features are calculated
 # for that class. Otherwise, the specified features are calculated, or, if none are specified, all are calculated
@@ -312,7 +375,7 @@ featureClass:
     - LeastAxisLength
     - Elongation
     - Flatness
-  firstorder: [] # specifying an empty list has the same effect as specifying nothing.
+  firstorder:
   glcm: # Disable SumAverage by specifying all other GLCM features available
     - 'Autocorrelation'
     - 'JointAverage'
