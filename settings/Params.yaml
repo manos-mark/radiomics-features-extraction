@@ -325,16 +325,16 @@ imageType:
   # !!! Warning !!!
   # Requires package skimage to function.
   # !!!!!!!!!!!!!!!
-  LBP2D: {
-    # [1]: Float, > 0, specifies the radius in which the neighbours should be sampled
-    lbp2DRadius: 1,
-
-    # [9]: Integer, ≥1, specifies the number of samples to use
-    lbp2DSamples: 9,
-
-    # [‘uniform’]: String, specifies the method for computing the LBP to use.
-    lbp2DMethod: 'uniform'
-  }
+#  LBP2D: {
+#    # [1]: Float, > 0, specifies the radius in which the neighbours should be sampled
+#    lbp2DRadius: 1,
+#
+#    # [9]: Integer, ≥1, specifies the number of samples to use
+#    lbp2DSamples: 9,
+#
+#    # [‘uniform’]: String, specifies the method for computing the LBP to use.
+#    lbp2DMethod: 'uniform'
+#  }
 
   # Computes the Local Binary Pattern in 3D using spherical harmonics. See also getLBP3DImage()
   # !!! Warning !!!

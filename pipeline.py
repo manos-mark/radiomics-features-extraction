@@ -5,9 +5,10 @@ Created on Tue Jul 14 14:11:11 2020
 """
 
 import os
+import csv
 import collections
-from sklearn.pipeline import Pipeline
 from radiomics import featureextractor
+
 
 def import_dataset():
     cases_dict = {}
@@ -43,33 +44,35 @@ def import_dataset():
     return cases_dict
 
 
-def batch_processing(extractor, cases):
+def extract_features(extractor, cases, output_filepath):
+    headers = None
     for key in cases:
         case = cases[key]
         image_filepath = case['Image']
         mask_filepath = case['Mask']
-    
+
         if (image_filepath is not None) and (mask_filepath is not None):
-          featureVector = collections.OrderedDict(case)
-          featureVector['Image'] = os.path.basename(image_filepath)
-          featureVector['Mask'] = os.path.basename(mask_filepath)
-    
-          try:
-            featureVector.update(extractor.execute(imageFilepath, maskFilepath))
-    
-            with open(outputFilepath, 'a') as outputFile:
-              writer = csv.writer(outputFile, lineterminator='\n')
-              if headers is None:
-                headers = list(featureVector.keys())
-                writer.writerow(headers)
-    
-              row = []
-              for h in headers:
-                row.append(featureVector.get(h, "N/A"))
-              writer.writerow(row)
-          except Exception:
-            continue
-            #logger.error('FEATURE EXTRACTION FAILED', exc_info=True)    
+            feature_vector = collections.OrderedDict(case)
+            feature_vector['Image'] = os.path.basename(image_filepath)
+            feature_vector['Mask'] = os.path.basename(mask_filepath)
+
+            try:
+                feature_vector.update(extractor.execute(image_filepath, mask_filepath))
+                print(feature_vector)
+
+                with open(output_filepath, 'a') as outputFile:
+                    writer = csv.writer(outputFile, lineterminator='\n')
+                    if headers is None:
+                        headers = list(feature_vector.keys())
+                        writer.writerow(headers)
+                    row = []
+                    for h in headers:
+                        row.append(feature_vector.get(h, "N/A"))
+                    writer.writerow(row)
+            except:
+                print("Failed to extract features.")
+                #logger.error('FEATURE EXTRACTION FAILED', exc_info=True)
+
 
 def main():
     # Get the location of the example settings file
@@ -85,16 +88,15 @@ def main():
     # Initialize feature extractor using the settings file
     extractor = featureextractor.RadiomicsFeatureExtractor(params)
     
-    # Execute batch processing
-    results = batch_processing(extractor, cases)
-    
-
+    # Execute batch processing to extract features
+    extract_features(extractor, cases, OUTPUT_PATH)
 
 
 if __name__ == '__main__':
     
     PARAMETERS_PATH = 'settings/Params.yaml'
     DATASET_PATH = 'data/input-images/patients'
+    OUTPUT_PATH = 'data/extracted-features/results.csv'
     IMAGE_TYPE = 'image.nrrd'
     MASK_TYPE = 'label.nrrd'
     
