@@ -45,30 +45,31 @@ def extract_features(extractor, cases, output_filepath):
         try:
             image_filepath = case['Image']
             mask_filepath = case['Mask']
-        except AttributeError as e:
-            print(e)
+        except AttributeError as exception:
+            print("Feature extraction error. Missing image or mask.")
+            print(exception)
             continue
 
-        if (image_filepath is not None) and (mask_filepath is not None):
-            feature_vector = collections.OrderedDict(case)
-            feature_vector['Image'] = os.path.basename(image_filepath)
-            feature_vector['Mask'] = os.path.basename(mask_filepath)
+        feature_vector = collections.OrderedDict(case)
+        feature_vector['ID'] = image_filepath.rsplit(".")[0]
+        feature_vector['Image'] = os.path.basename(image_filepath)
+        feature_vector['Mask'] = os.path.basename(mask_filepath)
 
-            try:
-                feature_vector.update(extractor.execute(image_filepath, mask_filepath))
-                print(feature_vector)
-                with open(output_filepath, 'a') as outputFile:
-                    writer = csv.writer(outputFile, lineterminator='\n')
-                    if headers is None:
-                        headers = list(feature_vector.keys())
-                        writer.writerow(headers)
-                    row = []
-                    for h in headers:
-                        row.append(feature_vector.get(h, "N/A"))
-                    writer.writerow(row)
-            except Exception as e:
-                print("Failed to extract features.")
-                print(e)
+        try:
+            feature_vector.update(extractor.execute(image_filepath, mask_filepath))
+            print("Extracted: ", feature_vector)
+            with open(output_filepath, 'a') as outputFile:
+                writer = csv.writer(outputFile, lineterminator='\n')
+                if headers is None:
+                    headers = list(feature_vector.keys())
+                    writer.writerow(headers)
+                row = []
+                for h in headers:
+                    row.append(feature_vector.get(h, "N/A"))
+                writer.writerow(row)
+        except Exception as exception:
+            print("Failed to extract features.")
+            print(exception)
 
 
 def main():
