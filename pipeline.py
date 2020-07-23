@@ -12,44 +12,42 @@ from radiomics import featureextractor
 
 def import_dataset():
     cases_dict = {}
-    patients = []
-    for _, dirs, _ in os.walk(DATASET_PATH):
-        if len(dirs) != 0:
-            patients = dirs
-    for i, patient in enumerate(patients):
-        for _, _, files in os.walk(os.path.join(DATASET_PATH, patient)):
-            for file in files:
+    for _, _, files in os.walk(DATASET_PATH):
+        for file in files:
+            # # Skip case when there is duplicate file in any patient directory
+            # if filename in cases_dict.keys() and 'Image' in cases_dict[filename].keys() \
+            #         and 'Mask' in cases_dict[filename].keys():
+            #     #self.logger.warning('Batch %s: Already exists, skipping this case...', filename)
+            #     continue
+
+            file_path = os.path.join(DATASET_PATH, file)
+
+            if "_roi" in file:
                 filename = file.rsplit("_")[0]
-                filetype = file.rsplit("_")[1]
-    
-                # Skip case when there is duplicate file in any patient directory
-                if filename in cases_dict.keys() and 'Image' in cases_dict[filename].keys() \
-                        and 'Mask' in cases_dict[filename].keys():
-                    #self.logger.warning('Batch %s: Already exists, skipping this case...', filename)
-                    continue
-    
-                file_path = os.path.join(DATASET_PATH, patient, file)
-    
-                if filetype == IMAGE_TYPE:
-                    if filename in cases_dict.keys():
-                        cases_dict[filename].update({'Image': file_path})
-                    else:
-                        cases_dict[filename] = {'Image': file_path}
-    
-                elif filetype == MASK_TYPE:
-                    if filename in cases_dict.keys():
-                        cases_dict[filename].update({'Mask': file_path})
-                    else:
-                        cases_dict[filename] = {'Mask': file_path}
+                if filename in cases_dict.keys():
+                    cases_dict[filename].update({'Mask': file_path})
+                else:
+                    cases_dict[filename] = {'Mask': file_path}
+            elif file.endswith(".nii"):
+                filename = file.rsplit(".")[0]
+                if filename in cases_dict.keys():
+                    cases_dict[filename].update({'Image': file_path})
+                else:
+                    cases_dict[filename] = {'Image': file_path}
     return cases_dict
 
 
 def extract_features(extractor, cases, output_filepath):
     headers = None
+    os.system('rm results.csv')
     for key in cases:
         case = cases[key]
-        image_filepath = case['Image']
-        mask_filepath = case['Mask']
+        try:
+            image_filepath = case['Image']
+            mask_filepath = case['Mask']
+        except AttributeError as e:
+            print(e)
+            continue
 
         if (image_filepath is not None) and (mask_filepath is not None):
             feature_vector = collections.OrderedDict(case)
@@ -59,7 +57,6 @@ def extract_features(extractor, cases, output_filepath):
             try:
                 feature_vector.update(extractor.execute(image_filepath, mask_filepath))
                 print(feature_vector)
-
                 with open(output_filepath, 'a') as outputFile:
                     writer = csv.writer(outputFile, lineterminator='\n')
                     if headers is None:
@@ -69,9 +66,9 @@ def extract_features(extractor, cases, output_filepath):
                     for h in headers:
                         row.append(feature_vector.get(h, "N/A"))
                     writer.writerow(row)
-            except:
+            except Exception as e:
                 print("Failed to extract features.")
-                #logger.error('FEATURE EXTRACTION FAILED', exc_info=True)
+                print(e)
 
 
 def main():
@@ -95,9 +92,7 @@ def main():
 if __name__ == '__main__':
     
     PARAMETERS_PATH = 'settings/Params.yaml'
-    DATASET_PATH = 'data/input-images/patients'
+    DATASET_PATH = 'data/dataset/'
     OUTPUT_PATH = 'data/extracted-features/results.csv'
-    IMAGE_TYPE = 'image.nrrd'
-    MASK_TYPE = 'label.nrrd'
     
     main()
