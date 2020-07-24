@@ -76,11 +76,13 @@ def main():
     # Get the location of the example settings file
     params = os.path.abspath(PARAMETERS_PATH)
     if not os.path.isfile(params):
+        print("Failed to import parameters file.")
         return 
     
     # Import the dataset
     cases = import_dataset()
     if not cases:
+        print("Failed to import dataset.")
         return
     
     # Initialize feature extractor using the settings file
