@@ -92,8 +92,8 @@ def main():
 
 if __name__ == '__main__':
     
-    PARAMETERS_PATH = 'settings/Params.yaml'
-    DATASET_PATH = 'data/dataset/'
-    OUTPUT_PATH = 'data/extracted-features/results.csv'
+    PARAMETERS_PATH = os.path.join('settings', 'Params.yaml')
+    DATASET_PATH = os.path.join('data', 'dataset')
+    OUTPUT_PATH = os.path.join('data', 'extracted-features', 'results.csv')
     
     main()
