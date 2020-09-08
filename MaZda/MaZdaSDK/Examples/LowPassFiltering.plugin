@@ -1,0 +1,17 @@
+// MaZda plugin: Filters image
+// Runs LowPassFiltering.exe
+// Copyright 2007 by Piotr M. Szczypinski 
+
+TestEnd
+
+// Saves currently opened image to the __TEMP__.bmp file
+SaveImage __TEMP__.bmp
+
+// Runs LowPassFilteringexe
+Execute LowPassFiltering.exe __TEMP__.bmp
+
+// Loads resulting regions to MaZda
+LoadImage __TEMP__.bmp
+
+// Cleans disk spase. Removes temporary file
+Execute cmd /c del __TEMP__.bmp

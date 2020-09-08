@@ -1,0 +1,41 @@
+ColorChannel Y
+ReloadImage
+RunAnalysis
+
+ColorChannel U
+ReloadImage
+RunAnalysis
+AggregateReports
+
+ColorChannel V
+ReloadImage
+RunAnalysis
+AggregateReports
+
+ColorChannel R
+ReloadImage
+RunAnalysis
+AggregateReports
+
+ColorChannel G
+ReloadImage
+RunAnalysis
+AggregateReports
+
+ColorChannel B
+ReloadImage
+RunAnalysis
+AggregateReports
+
+ColorChannel H
+ReloadImage
+RunAnalysis
+AggregateReports
+
+ColorChannel S
+ReloadImage
+RunAnalysis
+AggregateReports
+
+ColorChannel Y
+ReloadImage
