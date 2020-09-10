@@ -49,7 +49,7 @@ setting:
                                 # - sitkLinear (= 2)
                                 # - sitkBSpline (= 3)
                                 # - sitkGaussian (= 4)
-                                # - sitkLabelGaussian (= 5)
+                                # - sitkGaussian (= 5)
                                 # - sitkHammingWindowedSinc (= 6)
                                 # - sitkCosineWindowedSinc (= 7)
                                 # - sitkWelchWindowedSinc (= 8)

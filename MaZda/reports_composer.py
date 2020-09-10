@@ -1,8 +1,6 @@
 import os, glob
 import numpy as np
 import json
-import BeautifulSoup
-import pandas as pd
 
 def compose_files(path):
     os.chdir(path)
@@ -31,22 +29,9 @@ def compose_files(path):
                 file['images'].append(image_slice_file)
                 file['rois'].append(roi_slice_file)
                 file['report'].append(report)
-                convert_to_xlsx(report)
                 
     return files
 
-def convert_to_xlsx(report):
-    with open(report + '.xls') as xml_file:
-        soup = BeautifulSoup(xml_file.read(), 'xml')
-        writer = pd.ExcelWriter('sample.xlsx')
-        for sheet in soup.findAll('Worksheet'):
-            sheet_as_list = []
-            for row in sheet.findAll('Row'):
-                sheet_as_list.append([cell.Data.text if cell.Data else '' for cell in row.findAll('Cell')])
-            pd.DataFrame(sheet_as_list).to_excel(writer, sheet_name=sheet.attrs['ss:Name'], index=False, header=False)
-
-        writer.save()
-        
 def export_json(files):
     with open('files.json', 'w') as fp:
         json.dump(files, fp)
