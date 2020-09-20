@@ -68,7 +68,7 @@ LIFEx.texture.Img10Roi0=/home/manos/Desktop/dataset/R01-013_roi.nii
 
 # Patient14
 LIFEx.texture.Img11=/home/manos/Desktop/dataset/R01-014.nii 
-LIFEx.texture.Img12Roi0=/home/manos/Desktop/dataset/R01-014_roi.nii
+LIFEx.texture.Img11Roi0=/home/manos/Desktop/dataset/R01-014_roi.nii
 
 # Patient15
 LIFEx.texture.Img12=/home/manos/Desktop/dataset/R01-015.nii 
