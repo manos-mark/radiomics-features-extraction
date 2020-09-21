@@ -1,0 +1,40 @@
+MaZda End-User License Agreement
+
+The Technical University of Lodz, Institute of Electronics ("Licensor") grants this non-exclusive, end-user license agreement ("License Agreement"), to a person or legal entity ("Licensee") that applies to the usage of the Software being the property of the Technical University of Lodz, Institute of Electronics. The Software means computer programmes with associated documents and example computer files. The software is being licensed and is not being sold.
+If you do not agree to the terms and conditions of this License Agreement than you should not install, copy, or use this software in any other way, entirely or any part of it.
+
+1.  Intellectual property
+The Software is protected by the intellectual property regulations, international treaty provisions, and other regulations regarding the protection of intellectual property. The infringement of these laws will bring about the civil and legal responsibility. 
+
+2.  Accepting the license conditions
+The License Agreement is entered by installing, copying in any way, distributing or any other usage of the Software. The License Agreement is entered for unlimited period of time providing it is not terminated in accordance with the provisions of the Item 8.
+
+3.  The Licensee may:
+a) make one copy of the Software on one computer,
+b) make one copy of the Software for archival purposes,
+c) transfer his rights resulting from the License Agreement providing the Licensee does not retain any copy of the Software, and the Software is transferred entirely, as well as the person that will have the rights to the software agrees to obey the provisions of this License Agreement.
+
+4.	The Licensee may not:
+a) make any changes or modifications to the Software,
+b) disassemble, decompile or otherwise attempt to discover the source code of the Software,
+c) rent or lease the Software.
+
+5.    The Licensee is obliged to:
+a) keep information on the intellectual property in all copies of the Software,
+b) to give the name and the version of the Software used for publishing the results obtained by means of the Software.
+
+6.  Limited liability for damages, guarantee and warranty
+The Software is delivered "as is". The Licensee takes the risk resulting from using the Software. The Licensor will not grant any warranty that the Software will work properly, is of suitable quality, and that it fulfils the requirements of the Licensee. The Licensor is not liable for any losses resulting from the usage of the Software.
+
+7.  Evaluation of the Software
+To evaluate the fitness for the purpose of the Software the Licensor, without any charge, grants the Licensee the right to install and use one evaluation copy of the Software, on one computer, and to run the Software until the evaluation period terminates as is determined in the information contained in the Software,. When the limit of runs terminates the right to use the evaluation copy of the Software is cancelled. Further usage of the Software is permitted providing the license fee is paid to the Licensor.
+
+8.  Termination of the License Agreement
+All entitlements of the Licensee resulting from this License Agreement terminate when this License Agreement is terminated. The agreement is terminated in case the Licensee infringes the provisions of this License Agreement.
+
+9.  Consequences of the termination of the rights to use the software
+In case of the termination of the rights to use the Software the Licensee is obliged to cease the usage of the Software, remove it from the computer where it was installed, and to destroy  all copies of the Software made for the archival purposes.
+
+10.  Governing law and place of jurisdiction
+The governing law for this license agreement is the law of the Republic of Poland. Any litigation between the parties will be decided by the Court proper for the Licensor. In cases that are not settled by the provisions of this License Agreement the adequate provisions of Civil Code, the provisions of the Intellectual Property Act, and of the related Acts, will be applied.
+

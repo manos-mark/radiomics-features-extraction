@@ -1,6 +1,0 @@
-ID,Image,Mask
-brain1,../data/input-images/brain1_image.nrrd,../data/input-images/brain1_label.nrrd
-brain2,../data/input-images/brain2_image.nrrd,../data/input-images/brain2_label.nrrd
-breast1,../data/input-images/breast1_image.nrrd,../data/input-images/breast1_label.nrrd
-lung1,../data/input-images/lung1_image.nrrd,../data/input-images/lung1_label.nrrd
-lung2,../data/input-images/lung2_image.nrrd,../data/input-images/lung2_label.nrrd

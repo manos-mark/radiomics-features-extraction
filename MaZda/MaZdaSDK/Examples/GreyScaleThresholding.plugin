@@ -1,0 +1,19 @@
+// MaZda plugin: Gray-scale image low pass thresholding
+// Runs GreyScaleThresholding.exe
+// Copyright 2007 by Piotr M. Szczypinski 
+
+
+TestEnd
+
+// Saves currently opened image to the __TEMP__.bmp file
+SaveImage __TEMP__.bmp
+
+// Runs GreyScaleThresholding.exe to find regions of interest
+Execute GreyScaleThresholding.exe __TEMP__.bmp
+
+// Loads resulting regions to MaZda
+LoadROI __TEMP__.bmp.roi
+
+// Cleans disk spase. Removes temporary files
+Execute cmd /c del __TEMP__.bmp.roi
+Execute cmd /c del __TEMP__.bmp

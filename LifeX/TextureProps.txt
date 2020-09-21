@@ -1,0 +1,593 @@
+# start of file
+
+# Common
+LIFEx.texture.BinSize=25
+LIFEx.texture.NbGrey=0
+LIFEx.texture.SessionCsv=/home/manos/Desktop/radiomics/LifeX/lifex_extracted_features.xls
+
+# Absolute
+LIFEx.texture.ButtonAbsolute=true
+LIFEx.texture.MinBound=0.0
+LIFEx.texture.MaxBound=400.0
+
+# RelativeMeanSd
+LIFEx.texture.ButtonRelativeMeanSd=false
+# RelativeMinMax
+LIFEx.texture.ButtonRelativeMinMax=false
+
+# SpatialResampling
+LIFEx.texture.ZSpatialResampling=0
+LIFEx.texture.YSpatialResampling=0
+LIFEx.texture.XSpatialResampling=0
+# DistanceWithNeighbours
+LIFEx.texture.GLCM.DistanceWithNeighbours=1
+
+# Patient1
+LIFEx.texture.Img0=/home/manos/Desktop/dataset/R01-001.nii 
+LIFEx.texture.Img0Roi0=/home/manos/Desktop/dataset/R01-001_roi.nii
+
+# Patient2
+LIFEx.texture.Img1=/home/manos/Desktop/dataset/R01-002.nii 
+LIFEx.texture.Img1Roi0=/home/manos/Desktop/dataset/R01-002_roi.nii
+
+# Patient3
+LIFEx.texture.Img2=/home/manos/Desktop/dataset/R01-003.nii 
+LIFEx.texture.Img2Roi0=/home/manos/Desktop/dataset/R01-003_roi.nii
+
+# Patient4
+LIFEx.texture.Img3=/home/manos/Desktop/dataset/R01-004.nii 
+LIFEx.texture.Img3Roi0=/home/manos/Desktop/dataset/R01-004_roi.nii
+
+# Patient5
+LIFEx.texture.Img4=/home/manos/Desktop/dataset/R01-005.nii 
+LIFEx.texture.Img4Roi0=/home/manos/Desktop/dataset/R01-005_roi.nii
+
+# Patient6
+LIFEx.texture.Img5=/home/manos/Desktop/dataset/R01-006.nii 
+LIFEx.texture.Img5Roi0=/home/manos/Desktop/dataset/R01-006_roi.nii
+
+# Patient8
+LIFEx.texture.Img6=/home/manos/Desktop/dataset/R01-008.nii 
+LIFEx.texture.Img6Roi0=/home/manos/Desktop/dataset/R01-008_roi.nii
+
+# Patient10
+LIFEx.texture.Img7=/home/manos/Desktop/dataset/R01-010.nii 
+LIFEx.texture.Img7Roi0=/home/manos/Desktop/dataset/R01-010_roi.nii
+
+# Patient11
+LIFEx.texture.Img8=/home/manos/Desktop/dataset/R01-011.nii 
+LIFEx.texture.Img8Roi0=/home/manos/Desktop/dataset/R01-011_roi.nii
+
+# Patient12
+LIFEx.texture.Img9=/home/manos/Desktop/dataset/R01-012.nii 
+LIFEx.texture.Img9Roi0=/home/manos/Desktop/dataset/R01-012_roi.nii
+
+# Patient13
+LIFEx.texture.Img10=/home/manos/Desktop/dataset/R01-013.nii 
+LIFEx.texture.Img10Roi0=/home/manos/Desktop/dataset/R01-013_roi.nii
+
+# Patient14
+LIFEx.texture.Img11=/home/manos/Desktop/dataset/R01-014.nii 
+LIFEx.texture.Img11Roi0=/home/manos/Desktop/dataset/R01-014_roi.nii
+
+# Patient15
+LIFEx.texture.Img12=/home/manos/Desktop/dataset/R01-015.nii 
+LIFEx.texture.Img12Roi0=/home/manos/Desktop/dataset/R01-015_roi.nii
+
+# Patient16
+LIFEx.texture.Img13=/home/manos/Desktop/dataset/R01-016.nii 
+LIFEx.texture.Img13Roi0=/home/manos/Desktop/dataset/R01-016_roi.nii
+
+# Patient17
+LIFEx.texture.Img14=/home/manos/Desktop/dataset/R01-017.nii 
+LIFEx.texture.Img14Roi0=/home/manos/Desktop/dataset/R01-017_roi.nii
+
+# Patient18
+LIFEx.texture.Img15=/home/manos/Desktop/dataset/R01-018.nii 
+LIFEx.texture.Img15Roi0=/home/manos/Desktop/dataset/R01-018_roi.nii
+
+# Patient19
+LIFEx.texture.Img16=/home/manos/Desktop/dataset/R01-019.nii 
+LIFEx.texture.Img16Roi0=/home/manos/Desktop/dataset/R01-019_roi.nii
+
+# Patient20
+LIFEx.texture.Img17=/home/manos/Desktop/dataset/R01-020.nii 
+LIFEx.texture.Img17Roi0=/home/manos/Desktop/dataset/R01-020_roi.nii
+
+# Patient21
+LIFEx.texture.Img18=/home/manos/Desktop/dataset/R01-021.nii 
+LIFEx.texture.Img18Roi0=/home/manos/Desktop/dataset/R01-021_roi.nii
+
+# Patient22
+LIFEx.texture.Img19=/home/manos/Desktop/dataset/R01-022.nii 
+LIFEx.texture.Img19Roi0=/home/manos/Desktop/dataset/R01-022_roi.nii
+
+# Patient23
+LIFEx.texture.Img20=/home/manos/Desktop/dataset/R01-023.nii 
+LIFEx.texture.Img20Roi0=/home/manos/Desktop/dataset/R01-023_roi.nii
+
+# Patient24
+LIFEx.texture.Img21=/home/manos/Desktop/dataset/R01-024.nii 
+LIFEx.texture.Img21Roi0=/home/manos/Desktop/dataset/R01-024_roi.nii
+
+# Patient25
+LIFEx.texture.Img22=/home/manos/Desktop/dataset/R01-025.nii 
+LIFEx.texture.Img22Roi0=/home/manos/Desktop/dataset/R01-025_roi.nii
+
+# Patient26
+LIFEx.texture.Img23=/home/manos/Desktop/dataset/R01-026.nii 
+LIFEx.texture.Img23Roi0=/home/manos/Desktop/dataset/R01-026_roi.nii
+
+# Patient27
+LIFEx.texture.Img24=/home/manos/Desktop/dataset/R01-027.nii 
+LIFEx.texture.Img24Roi0=/home/manos/Desktop/dataset/R01-027_roi.nii
+
+# Patient28
+LIFEx.texture.Img25=/home/manos/Desktop/dataset/R01-028.nii 
+LIFEx.texture.Img25Roi0=/home/manos/Desktop/dataset/R01-028_roi.nii
+
+# Patient29
+LIFEx.texture.Img26=/home/manos/Desktop/dataset/R01-029.nii 
+LIFEx.texture.Img26Roi0=/home/manos/Desktop/dataset/R01-029_roi.nii
+
+# Patient30
+LIFEx.texture.Img27=/home/manos/Desktop/dataset/R01-030.nii 
+LIFEx.texture.Img27Roi0=/home/manos/Desktop/dataset/R01-030_roi.nii
+
+# Patient31
+LIFEx.texture.Img28=/home/manos/Desktop/dataset/R01-031.nii 
+LIFEx.texture.Img28Roi0=/home/manos/Desktop/dataset/R01-031_roi.nii
+
+# Patient32
+LIFEx.texture.Img29=/home/manos/Desktop/dataset/R01-032.nii 
+LIFEx.texture.Img29Roi0=/home/manos/Desktop/dataset/R01-032_roi.nii
+
+# Patient33
+LIFEx.texture.Img30=/home/manos/Desktop/dataset/R01-033.nii 
+LIFEx.texture.Img30Roi0=/home/manos/Desktop/dataset/R01-033_roi.nii
+
+# Patient34
+LIFEx.texture.Img31=/home/manos/Desktop/dataset/R01-034.nii 
+LIFEx.texture.Img31Roi0=/home/manos/Desktop/dataset/R01-034_roi.nii
+
+# Patient35
+LIFEx.texture.Img32=/home/manos/Desktop/dataset/R01-035.nii 
+LIFEx.texture.Img32Roi0=/home/manos/Desktop/dataset/R01-035_roi.nii
+
+# Patient36
+LIFEx.texture.Img33=/home/manos/Desktop/dataset/R01-036.nii 
+LIFEx.texture.Img33Roi0=/home/manos/Desktop/dataset/R01-036_roi.nii
+
+# Patient37
+LIFEx.texture.Img34=/home/manos/Desktop/dataset/R01-037.nii 
+LIFEx.texture.Img34Roi0=/home/manos/Desktop/dataset/R01-037_roi.nii
+
+# Patient38
+LIFEx.texture.Img35=/home/manos/Desktop/dataset/R01-038.nii 
+LIFEx.texture.Img35Roi0=/home/manos/Desktop/dataset/R01-038_roi.nii
+
+# Patient39
+LIFEx.texture.Img36=/home/manos/Desktop/dataset/R01-039.nii 
+LIFEx.texture.Img36Roi0=/home/manos/Desktop/dataset/R01-039_roi.nii
+
+# Patient40
+LIFEx.texture.Img37=/home/manos/Desktop/dataset/R01-040.nii 
+LIFEx.texture.Img37Roi0=/home/manos/Desktop/dataset/R01-040_roi.nii
+
+# Patient41
+LIFEx.texture.Img38=/home/manos/Desktop/dataset/R01-041.nii 
+LIFEx.texture.Img38Roi0=/home/manos/Desktop/dataset/R01-041_roi.nii
+
+# Patient42
+LIFEx.texture.Img39=/home/manos/Desktop/dataset/R01-042.nii 
+LIFEx.texture.Img39Roi0=/home/manos/Desktop/dataset/R01-042_roi.nii
+
+# Patient43
+LIFEx.texture.Img40=/home/manos/Desktop/dataset/R01-043.nii 
+LIFEx.texture.Img40Roi0=/home/manos/Desktop/dataset/R01-043_roi.nii
+
+# Patient44
+LIFEx.texture.Img41=/home/manos/Desktop/dataset/R01-044.nii 
+LIFEx.texture.Img41Roi0=/home/manos/Desktop/dataset/R01-044_roi.nii
+
+# Patient45
+LIFEx.texture.Img42=/home/manos/Desktop/dataset/R01-045.nii 
+LIFEx.texture.Img42Roi0=/home/manos/Desktop/dataset/R01-045_roi.nii
+
+# Patient46
+LIFEx.texture.Img43=/home/manos/Desktop/dataset/R01-046.nii 
+LIFEx.texture.Img43Roi0=/home/manos/Desktop/dataset/R01-046_roi.nii
+
+# Patient47
+LIFEx.texture.Img44=/home/manos/Desktop/dataset/R01-047.nii 
+LIFEx.texture.Img44Roi0=/home/manos/Desktop/dataset/R01-047_roi.nii
+
+# Patient48
+LIFEx.texture.Img45=/home/manos/Desktop/dataset/R01-048.nii 
+LIFEx.texture.Img45Roi0=/home/manos/Desktop/dataset/R01-048_roi.nii
+
+# Patient49
+LIFEx.texture.Img46=/home/manos/Desktop/dataset/R01-049.nii 
+LIFEx.texture.Img46Roi0=/home/manos/Desktop/dataset/R01-049_roi.nii
+
+# Patient50
+LIFEx.texture.Img47=/home/manos/Desktop/dataset/R01-050.nii 
+LIFEx.texture.Img47Roi0=/home/manos/Desktop/dataset/R01-050_roi.nii
+
+# Patient51
+LIFEx.texture.Img48=/home/manos/Desktop/dataset/R01-051.nii 
+LIFEx.texture.Img48Roi0=/home/manos/Desktop/dataset/R01-051_roi.nii
+
+# Patient52
+LIFEx.texture.Img49=/home/manos/Desktop/dataset/R01-052.nii 
+LIFEx.texture.Img49Roi0=/home/manos/Desktop/dataset/R01-052_roi.nii
+
+# Patient53
+LIFEx.texture.Img50=/home/manos/Desktop/dataset/R01-053.nii 
+LIFEx.texture.Img50Roi0=/home/manos/Desktop/dataset/R01-053_roi.nii
+
+# Patient54
+LIFEx.texture.Img51=/home/manos/Desktop/dataset/R01-054.nii 
+LIFEx.texture.Img51Roi0=/home/manos/Desktop/dataset/R01-054_roi.nii
+
+# Patient55
+LIFEx.texture.Img52=/home/manos/Desktop/dataset/R01-055.nii 
+LIFEx.texture.Img52Roi0=/home/manos/Desktop/dataset/R01-055_roi.nii
+
+# Patient56
+LIFEx.texture.Img53=/home/manos/Desktop/dataset/R01-056.nii 
+LIFEx.texture.Img53Roi0=/home/manos/Desktop/dataset/R01-056_roi.nii
+
+# Patient57
+LIFEx.texture.Img54=/home/manos/Desktop/dataset/R01-057.nii 
+LIFEx.texture.Img54Roi0=/home/manos/Desktop/dataset/R01-057_roi.nii
+
+# Patient58
+LIFEx.texture.Img55=/home/manos/Desktop/dataset/R01-058.nii 
+LIFEx.texture.Img55Roi0=/home/manos/Desktop/dataset/R01-058_roi.nii
+
+# Patient59
+LIFEx.texture.Img56=/home/manos/Desktop/dataset/R01-059.nii 
+LIFEx.texture.Img56Roi0=/home/manos/Desktop/dataset/R01-059_roi.nii
+
+# Patient60
+LIFEx.texture.Img57=/home/manos/Desktop/dataset/R01-060.nii 
+LIFEx.texture.Img57Roi0=/home/manos/Desktop/dataset/R01-060_roi.nii
+
+# Patient61
+LIFEx.texture.Img58=/home/manos/Desktop/dataset/R01-061.nii 
+LIFEx.texture.Img58Roi0=/home/manos/Desktop/dataset/R01-061_roi.nii
+
+# Patient62
+LIFEx.texture.Img59=/home/manos/Desktop/dataset/R01-062.nii 
+LIFEx.texture.Img59Roi0=/home/manos/Desktop/dataset/R01-062_roi.nii
+
+# Patient63
+LIFEx.texture.Img60=/home/manos/Desktop/dataset/R01-063.nii 
+LIFEx.texture.Img60Roi0=/home/manos/Desktop/dataset/R01-063_roi.nii
+
+# Patient64
+LIFEx.texture.Img61=/home/manos/Desktop/dataset/R01-064.nii 
+LIFEx.texture.Img61Roi0=/home/manos/Desktop/dataset/R01-064_roi.nii
+
+# Patient65
+LIFEx.texture.Img62=/home/manos/Desktop/dataset/R01-065.nii 
+LIFEx.texture.Img62Roi0=/home/manos/Desktop/dataset/R01-065_roi.nii
+
+# Patient66
+LIFEx.texture.Img63=/home/manos/Desktop/dataset/R01-066.nii 
+LIFEx.texture.Img63Roi0=/home/manos/Desktop/dataset/R01-066_roi.nii
+
+# Patient67
+LIFEx.texture.Img64=/home/manos/Desktop/dataset/R01-067.nii 
+LIFEx.texture.Img64Roi0=/home/manos/Desktop/dataset/R01-067_roi.nii
+
+# Patient68
+LIFEx.texture.Img65=/home/manos/Desktop/dataset/R01-068.nii 
+LIFEx.texture.Img65Roi0=/home/manos/Desktop/dataset/R01-068_roi.nii
+
+# Patient69
+LIFEx.texture.Img66=/home/manos/Desktop/dataset/R01-069.nii 
+LIFEx.texture.Img66Roi0=/home/manos/Desktop/dataset/R01-069_roi.nii
+
+# Patient70
+LIFEx.texture.Img67=/home/manos/Desktop/dataset/R01-070.nii 
+LIFEx.texture.Img67Roi0=/home/manos/Desktop/dataset/R01-070_roi.nii
+
+# Patient71
+LIFEx.texture.Img68=/home/manos/Desktop/dataset/R01-071.nii 
+LIFEx.texture.Img68Roi0=/home/manos/Desktop/dataset/R01-071_roi.nii
+
+# Patient72
+LIFEx.texture.Img69=/home/manos/Desktop/dataset/R01-072.nii 
+LIFEx.texture.Img69Roi0=/home/manos/Desktop/dataset/R01-072_roi.nii
+
+# Patient73
+LIFEx.texture.Img70=/home/manos/Desktop/dataset/R01-073.nii 
+LIFEx.texture.Img70Roi0=/home/manos/Desktop/dataset/R01-073_roi.nii
+
+# Patient74
+LIFEx.texture.Img71=/home/manos/Desktop/dataset/R01-074.nii 
+LIFEx.texture.Img71Roi0=/home/manos/Desktop/dataset/R01-074_roi.nii
+
+# Patient75
+LIFEx.texture.Img72=/home/manos/Desktop/dataset/R01-075.nii 
+LIFEx.texture.Img72Roi0=/home/manos/Desktop/dataset/R01-075_roi.nii
+
+# Patient76
+LIFEx.texture.Img73=/home/manos/Desktop/dataset/R01-076.nii 
+LIFEx.texture.Img73Roi0=/home/manos/Desktop/dataset/R01-076_roi.nii
+
+# Patient77
+LIFEx.texture.Img74=/home/manos/Desktop/dataset/R01-077.nii 
+LIFEx.texture.Img74Roi0=/home/manos/Desktop/dataset/R01-077_roi.nii
+
+# Patient78
+LIFEx.texture.Img75=/home/manos/Desktop/dataset/R01-078.nii 
+LIFEx.texture.Img75Roi0=/home/manos/Desktop/dataset/R01-078_roi.nii
+
+# Patient79
+LIFEx.texture.Img76=/home/manos/Desktop/dataset/R01-079.nii 
+LIFEx.texture.Img76Roi0=/home/manos/Desktop/dataset/R01-079_roi.nii
+
+# Patient80
+LIFEx.texture.Img77=/home/manos/Desktop/dataset/R01-080.nii 
+LIFEx.texture.Img77Roi0=/home/manos/Desktop/dataset/R01-080_roi.nii
+
+# Patient81
+LIFEx.texture.Img78=/home/manos/Desktop/dataset/R01-081.nii 
+LIFEx.texture.Img78Roi0=/home/manos/Desktop/dataset/R01-081_roi.nii
+
+# Patient82
+LIFEx.texture.Img79=/home/manos/Desktop/dataset/R01-082.nii 
+LIFEx.texture.Img79Roi0=/home/manos/Desktop/dataset/R01-082_roi.nii
+
+# Patient83
+LIFEx.texture.Img80=/home/manos/Desktop/dataset/R01-083.nii 
+LIFEx.texture.Img80Roi0=/home/manos/Desktop/dataset/R01-083_roi.nii
+
+# Patient84
+LIFEx.texture.Img81=/home/manos/Desktop/dataset/R01-084.nii 
+LIFEx.texture.Img81Roi0=/home/manos/Desktop/dataset/R01-084_roi.nii
+
+# Patient85
+LIFEx.texture.Img82=/home/manos/Desktop/dataset/R01-085.nii 
+LIFEx.texture.Img82Roi0=/home/manos/Desktop/dataset/R01-085_roi.nii
+
+# Patient86
+LIFEx.texture.Img83=/home/manos/Desktop/dataset/R01-086.nii 
+LIFEx.texture.Img83Roi0=/home/manos/Desktop/dataset/R01-086_roi.nii
+
+# Patient87
+LIFEx.texture.Img84=/home/manos/Desktop/dataset/R01-087.nii 
+LIFEx.texture.Img84Roi0=/home/manos/Desktop/dataset/R01-087_roi.nii
+
+# Patient88
+LIFEx.texture.Img85=/home/manos/Desktop/dataset/R01-088.nii 
+LIFEx.texture.Img85Roi0=/home/manos/Desktop/dataset/R01-088_roi.nii
+
+# Patient89
+LIFEx.texture.Img86=/home/manos/Desktop/dataset/R01-089.nii 
+LIFEx.texture.Img86Roi0=/home/manos/Desktop/dataset/R01-089_roi.nii
+
+# Patient90
+LIFEx.texture.Img87=/home/manos/Desktop/dataset/R01-090.nii 
+LIFEx.texture.Img87Roi0=/home/manos/Desktop/dataset/R01-090_roi.nii
+
+# Patient91
+LIFEx.texture.Img88=/home/manos/Desktop/dataset/R01-091.nii 
+LIFEx.texture.Img88Roi0=/home/manos/Desktop/dataset/R01-091_roi.nii
+
+# Patient92
+LIFEx.texture.Img89=/home/manos/Desktop/dataset/R01-092.nii 
+LIFEx.texture.Img89Roi0=/home/manos/Desktop/dataset/R01-092_roi.nii
+
+# Patient93
+LIFEx.texture.Img90=/home/manos/Desktop/dataset/R01-093.nii 
+LIFEx.texture.Img90Roi0=/home/manos/Desktop/dataset/R01-093_roi.nii
+
+# Patient94
+LIFEx.texture.Img91=/home/manos/Desktop/dataset/R01-094.nii 
+LIFEx.texture.Img91Roi0=/home/manos/Desktop/dataset/R01-094_roi.nii
+
+# Patient95
+LIFEx.texture.Img92=/home/manos/Desktop/dataset/R01-095.nii 
+LIFEx.texture.Img92Roi0=/home/manos/Desktop/dataset/R01-095_roi.nii
+
+# Patient96
+LIFEx.texture.Img93=/home/manos/Desktop/dataset/R01-096.nii 
+LIFEx.texture.Img93Roi0=/home/manos/Desktop/dataset/R01-096_roi.nii
+
+# Patient97
+LIFEx.texture.Img94=/home/manos/Desktop/dataset/R01-097.nii 
+LIFEx.texture.Img94Roi0=/home/manos/Desktop/dataset/R01-097_roi.nii
+
+# Patient98
+LIFEx.texture.Img95=/home/manos/Desktop/dataset/R01-098.nii 
+LIFEx.texture.Img95Roi0=/home/manos/Desktop/dataset/R01-098_roi.nii
+
+# Patient99
+LIFEx.texture.Img96=/home/manos/Desktop/dataset/R01-099.nii 
+LIFEx.texture.Img96Roi0=/home/manos/Desktop/dataset/R01-099_roi.nii
+
+# Patient100
+LIFEx.texture.Img97=/home/manos/Desktop/dataset/R01-100.nii 
+LIFEx.texture.Img97Roi0=/home/manos/Desktop/dataset/R01-100_roi.nii
+
+# Patient101
+LIFEx.texture.Img98=/home/manos/Desktop/dataset/R01-101.nii 
+LIFEx.texture.Img98Roi0=/home/manos/Desktop/dataset/R01-101_roi.nii
+
+# Patient102
+LIFEx.texture.Img99=/home/manos/Desktop/dataset/R01-102.nii 
+LIFEx.texture.Img99Roi0=/home/manos/Desktop/dataset/R01-102_roi.nii
+
+# Patient103
+LIFEx.texture.Img100=/home/manos/Desktop/dataset/R01-103.nii 
+LIFEx.texture.Img100Roi0=/home/manos/Desktop/dataset/R01-103_roi.nii
+
+# Patient104
+LIFEx.texture.Img101=/home/manos/Desktop/dataset/R01-104.nii 
+LIFEx.texture.Img101Roi0=/home/manos/Desktop/dataset/R01-104_roi.nii
+
+# Patient105
+LIFEx.texture.Img102=/home/manos/Desktop/dataset/R01-105.nii 
+LIFEx.texture.Img102Roi0=/home/manos/Desktop/dataset/R01-105_roi.nii
+
+# Patient106
+LIFEx.texture.Img103=/home/manos/Desktop/dataset/R01-106.nii 
+LIFEx.texture.Img103Roi0=/home/manos/Desktop/dataset/R01-106_roi.nii
+
+# Patient107
+LIFEx.texture.Img104=/home/manos/Desktop/dataset/R01-107.nii 
+LIFEx.texture.Img104Roi0=/home/manos/Desktop/dataset/R01-107_roi.nii
+
+# Patient108
+LIFEx.texture.Img105=/home/manos/Desktop/dataset/R01-108.nii 
+LIFEx.texture.Img105Roi0=/home/manos/Desktop/dataset/R01-108_roi.nii
+
+# Patient109
+LIFEx.texture.Img106=/home/manos/Desktop/dataset/R01-109.nii 
+LIFEx.texture.Img106Roi0=/home/manos/Desktop/dataset/R01-109_roi.nii
+
+# Patient110
+LIFEx.texture.Img107=/home/manos/Desktop/dataset/R01-110.nii 
+LIFEx.texture.Img107Roi0=/home/manos/Desktop/dataset/R01-110_roi.nii
+
+# Patient111
+LIFEx.texture.Img108=/home/manos/Desktop/dataset/R01-111.nii 
+LIFEx.texture.Img108Roi0=/home/manos/Desktop/dataset/R01-111_roi.nii
+
+# Patient112
+LIFEx.texture.Img109=/home/manos/Desktop/dataset/R01-112.nii 
+LIFEx.texture.Img109Roi0=/home/manos/Desktop/dataset/R01-112_roi.nii
+
+# Patient113
+LIFEx.texture.Img110=/home/manos/Desktop/dataset/R01-113.nii 
+LIFEx.texture.Img110Roi0=/home/manos/Desktop/dataset/R01-113_roi.nii
+
+# Patient114
+LIFEx.texture.Img111=/home/manos/Desktop/dataset/R01-114.nii 
+LIFEx.texture.Img111Roi0=/home/manos/Desktop/dataset/R01-114_roi.nii
+
+# Patient115
+LIFEx.texture.Img112=/home/manos/Desktop/dataset/R01-115.nii 
+LIFEx.texture.Img112Roi0=/home/manos/Desktop/dataset/R01-115_roi.nii
+
+# Patient116
+LIFEx.texture.Img113=/home/manos/Desktop/dataset/R01-116.nii 
+LIFEx.texture.Img113Roi0=/home/manos/Desktop/dataset/R01-116_roi.nii
+
+# Patient117
+LIFEx.texture.Img114=/home/manos/Desktop/dataset/R01-117.nii 
+LIFEx.texture.Img114Roi0=/home/manos/Desktop/dataset/R01-117_roi.nii
+
+# Patient118
+LIFEx.texture.Img115=/home/manos/Desktop/dataset/R01-118.nii 
+LIFEx.texture.Img115Roi0=/home/manos/Desktop/dataset/R01-118_roi.nii
+
+# Patient119
+LIFEx.texture.Img116=/home/manos/Desktop/dataset/R01-119.nii 
+LIFEx.texture.Img116Roi0=/home/manos/Desktop/dataset/R01-119_roi.nii
+
+# Patient120
+LIFEx.texture.Img117=/home/manos/Desktop/dataset/R01-120.nii 
+LIFEx.texture.Img117Roi0=/home/manos/Desktop/dataset/R01-120_roi.nii
+
+# Patient121
+LIFEx.texture.Img118=/home/manos/Desktop/dataset/R01-121.nii 
+LIFEx.texture.Img118Roi0=/home/manos/Desktop/dataset/R01-121_roi.nii
+
+# Patient122
+LIFEx.texture.Img119=/home/manos/Desktop/dataset/R01-122.nii 
+LIFEx.texture.Img119Roi0=/home/manos/Desktop/dataset/R01-122_roi.nii
+
+# Patient123
+LIFEx.texture.Img120=/home/manos/Desktop/dataset/R01-123.nii 
+LIFEx.texture.Img120Roi0=/home/manos/Desktop/dataset/R01-123_roi.nii
+
+# Patient124
+LIFEx.texture.Img121=/home/manos/Desktop/dataset/R01-124.nii 
+LIFEx.texture.Img121Roi0=/home/manos/Desktop/dataset/R01-124_roi.nii
+
+# Patient125
+LIFEx.texture.Img122=/home/manos/Desktop/dataset/R01-125.nii 
+LIFEx.texture.Img122Roi0=/home/manos/Desktop/dataset/R01-125_roi.nii
+
+# Patient126
+LIFEx.texture.Img123=/home/manos/Desktop/dataset/R01-126.nii 
+LIFEx.texture.Img123Roi0=/home/manos/Desktop/dataset/R01-126_roi.nii
+
+# Patient127
+LIFEx.texture.Img124=/home/manos/Desktop/dataset/R01-127.nii 
+LIFEx.texture.Img124Roi0=/home/manos/Desktop/dataset/R01-127_roi.nii
+
+# Patient128
+LIFEx.texture.Img125=/home/manos/Desktop/dataset/R01-128.nii 
+LIFEx.texture.Img125Roi0=/home/manos/Desktop/dataset/R01-128_roi.nii
+
+# Patient129
+LIFEx.texture.Img126=/home/manos/Desktop/dataset/R01-129.nii 
+LIFEx.texture.Img126Roi0=/home/manos/Desktop/dataset/R01-129_roi.nii
+
+# Patient131
+LIFEx.texture.Img127=/home/manos/Desktop/dataset/R01-131.nii 
+LIFEx.texture.Img127Roi0=/home/manos/Desktop/dataset/R01-131_roi.nii
+
+# Patient132
+LIFEx.texture.Img128=/home/manos/Desktop/dataset/R01-132.nii 
+LIFEx.texture.Img128Roi0=/home/manos/Desktop/dataset/R01-132_roi.nii
+
+# Patient133
+LIFEx.texture.Img129=/home/manos/Desktop/dataset/R01-133.nii 
+LIFEx.texture.Img129Roi0=/home/manos/Desktop/dataset/R01-133_roi.nii
+
+# Patient134
+LIFEx.texture.Img130=/home/manos/Desktop/dataset/R01-134.nii 
+LIFEx.texture.Img130Roi0=/home/manos/Desktop/dataset/R01-134_roi.nii
+
+# Patient135
+LIFEx.texture.Img131=/home/manos/Desktop/dataset/R01-135.nii 
+LIFEx.texture.Img131Roi0=/home/manos/Desktop/dataset/R01-135_roi.nii
+
+# Patient136
+LIFEx.texture.Img132=/home/manos/Desktop/dataset/R01-136.nii 
+LIFEx.texture.Img132Roi0=/home/manos/Desktop/dataset/R01-136_roi.nii
+
+# Patient137
+LIFEx.texture.Img133=/home/manos/Desktop/dataset/R01-137.nii 
+LIFEx.texture.Img133Roi0=/home/manos/Desktop/dataset/R01-137_roi.nii
+
+# Patient138
+LIFEx.texture.Img134=/home/manos/Desktop/dataset/R01-138.nii 
+LIFEx.texture.Img134Roi0=/home/manos/Desktop/dataset/R01-138_roi.nii
+
+# Patient139
+LIFEx.texture.Img135=/home/manos/Desktop/dataset/R01-139.nii 
+LIFEx.texture.Img135Roi0=/home/manos/Desktop/dataset/R01-139_roi.nii
+
+# Patient140
+LIFEx.texture.Img136=/home/manos/Desktop/dataset/R01-140.nii 
+LIFEx.texture.Img136Roi0=/home/manos/Desktop/dataset/R01-140_roi.nii
+
+# Patient141
+LIFEx.texture.Img137=/home/manos/Desktop/dataset/R01-141.nii 
+LIFEx.texture.Img137Roi0=/home/manos/Desktop/dataset/R01-141_roi.nii
+
+# Patient142
+LIFEx.texture.Img138=/home/manos/Desktop/dataset/R01-142.nii 
+LIFEx.texture.Img138Roi0=/home/manos/Desktop/dataset/R01-142_roi.nii
+
+# Patient144
+LIFEx.texture.Img139=/home/manos/Desktop/dataset/R01-144.nii 
+LIFEx.texture.Img139Roi0=/home/manos/Desktop/dataset/R01-144_roi.nii
+
+# Patient145
+LIFEx.texture.Img140=/home/manos/Desktop/dataset/R01-145.nii 
+LIFEx.texture.Img140Roi0=/home/manos/Desktop/dataset/R01-145_roi.nii
+
+# Patient146
+LIFEx.texture.Img141=/home/manos/Desktop/dataset/R01-146.nii 
+LIFEx.texture.Img141Roi0=/home/manos/Desktop/dataset/R01-146_roi.nii
+
+# end of file

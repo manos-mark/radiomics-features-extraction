@@ -1,6 +1,0 @@
-ID,Image,Mask
-brain1,brain1_image.nrrd,brain1_label.nrrd
-brain2,brain2_image.nrrd,brain2_label.nrrd
-breast1,breast1_image.nrrd,breast1_label.nrrd
-lung1,lung1_image.nrrd,lung1_label.nrrd
-lung2,lung2_image.nrrd,lung2_label.nrrd

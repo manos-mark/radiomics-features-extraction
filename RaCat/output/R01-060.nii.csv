@@ -1,0 +1,480 @@
+Morphology,Volume,4516.28
+Morphology,approximate volume,6232
+Morphology,Surface,2556.75
+Morphology,Surface to volume ratio,0.566118
+Morphology,Compactness1,0.0197094
+Morphology,Compactness2,0.138023
+Morphology,Spherical disproportion,1.93501
+Morphology,sphericity,0.516793
+Morphology,asphericity,0.56117
+Morphology,center of mass shift,inf
+Morphology,maximum 3D diameter,0
+Morphology,major axis length,0
+Morphology,minor axis length,5.3953e-06
+Morphology,least axis length,9.7202e-19
+Morphology,elongation,inf
+Morphology,flatness,inf
+Morphology,vol density AABB,0.232319
+Morphology,area density AABB,0.530006
+Morphology,vol density AEE,inf
+Morphology,integrated intensity,2.70491e+06
+Morphology,Morans I,0.0628069
+Morphology,Gearys C,0.964966
+Local intensity,local intensity peak,443
+Local intensity,global intensity peak,616
+Statistics,mean,598.926
+Statistics,variance,74039.5
+Statistics,skewness,0.202545
+Statistics,kurtosis,-1.04921
+Statistics,median,572
+Statistics,minimum,73
+Statistics,10th percentile,252
+Statistics,90th percentile,979
+Statistics,maximum,1189
+Statistics,Interquartile range,449
+Statistics,range,1116
+Statistics,Mean absolut deviation,232.138
+Statistics,Robust mean absolute deviation,179.018
+Statistics,Median absolute deviation,231.108
+Statistics,Coefficient of variation,0.454317
+Statistics,Quartile coefficient,0.373234
+Statistics,Energy,3.37113e+08
+Statistics,Root mean,657.838
+intensity volume,volume at int fraction 10,0.961489
+intensity volume,volume at int fraction 90,0.0308087
+intensity volume,int at vol fraction 10,988
+intensity volume,int at vol fraction 90,253
+intensity volume,difference vol at int fraction,0.93068
+intensity volume,difference int at volume fraction,735
+Intensity histogram,mean,64.4917
+Intensity histogram,variance,118.743
+Intensity histogram,skewness,0.19987
+Intensity histogram,kurtosis,-1.04744
+Intensity histogram,median,63
+Intensity histogram,minimum,43
+Intensity histogram,10th percentile,51
+Intensity histogram,90th percentile,80
+Intensity histogram,maximum,88
+Intensity histogram,mode,46
+Intensity histogram,Interquartile range,18
+Intensity histogram,range,45
+Intensity histogram,Mean absolut deviation,9.30033
+Intensity histogram,Robust mean absolute deviation,7.59538
+Intensity histogram,Median absolut deviation,9.25032
+Intensity histogram,Coefficient of variation,0.168966
+Intensity histogram,Quartile coefficient,0.138462
+Intensity histogram,Entropy,5.32488
+Intensity histogram,Uniformity,0.0265951
+Intensity histogram,Energy,3.3325e+06
+Intensity histogram,Maximum histogram gradient,6.5
+Intensity histogram,Maximum histogram gradient grey level,53
+Intensity histogram,Minimum histogram gradient,-7.5
+Intensity histogram,Minimum histogram gradient grey level,80
+glcmFeatures2Davg,joint maximum,0.0652611
+glcmFeatures2Davg,joint average,65.0932
+glcmFeatures2Davg,joint variance,83.6692
+glcmFeatures2Davg,joint entropy,4.91582
+glcmFeatures2Davg,difference average,9.31549
+glcmFeatures2Davg,difference variance,52.2795
+glcmFeatures2Davg,difference entropy,3.33101
+glcmFeatures2Davg,sum average,130.186
+glcmFeatures2Davg,sum variance,190.759
+glcmFeatures2Davg,sum entropy,3.6938
+glcmFeatures2Davg,angular second moment,0.047536
+glcmFeatures2Davg,contrast,143.918
+glcmFeatures2Davg,dissimilarity,9.31549
+glcmFeatures2Davg,inverse difference,0.194954
+glcmFeatures2Davg,inverse difference normalised,0.900182
+glcmFeatures2Davg,inverse difference moment,0.114536
+glcmFeatures2Davg,inverse difference moment normalised,0.973114
+glcmFeatures2Davg,inverse variance,0.115341
+glcmFeatures2Davg,correlation,0.0711406
+glcmFeatures2Davg,autocorrelation,4311.52
+glcmFeatures2Davg,cluster tendency,190.759
+glcmFeatures2Davg,cluster shade,25.0816
+glcmFeatures2Davg,cluster prominence,104854
+glcmFeatures2Davg,first measure of information correlation,-0.69948
+glcmFeatures2Davg,second measure of information correlation,0.980661
+glcmFeatures2DDmrg,joint maximum,0.00634552
+glcmFeatures2DDmrg,joint average,66.5089
+glcmFeatures2DDmrg,joint variance,118.859
+glcmFeatures2DDmrg,joint entropy,9.35209
+glcmFeatures2DDmrg,difference average,9.92647
+glcmFeatures2DDmrg,difference variance,62.4079
+glcmFeatures2DDmrg,difference entropy,4.67606
+glcmFeatures2DDmrg,sum average,133.018
+glcmFeatures2DDmrg,sum variance,313.175
+glcmFeatures2DDmrg,sum entropy,5.99402
+glcmFeatures2DDmrg,angular second moment,0.00175386
+glcmFeatures2DDmrg,contrast,162.26
+glcmFeatures2DDmrg,dissimilarity,9.92647
+glcmFeatures2DDmrg,inverse difference,0.189294
+glcmFeatures2DDmrg,inverse difference normalised,0.904285
+glcmFeatures2DDmrg,inverse difference moment,0.109101
+glcmFeatures2DDmrg,inverse difference moment normalised,0.980231
+glcmFeatures2DDmrg,inverse variance,0.113944
+glcmFeatures2DDmrg,correlation,0.319052
+glcmFeatures2DDmrg,autocorrelation,4461.22
+glcmFeatures2DDmrg,cluster tendency,313.175
+glcmFeatures2DDmrg,cluster shade,122.414
+glcmFeatures2DDmrg,cluster prominence,212812
+glcmFeatures2DDmrg,first measure of information correlation,-0.243215
+glcmFeatures2DDmrg,second measure of information correlation,0.961638
+glcmFeatures2Dmrg,joint maximum,0.032862
+glcmFeatures2Dmrg,joint average,65.7574
+glcmFeatures2Dmrg,joint variance,84.4791
+glcmFeatures2Dmrg,joint entropy,6.56833
+glcmFeatures2Dmrg,difference average,9.32154
+glcmFeatures2Dmrg,difference variance,54.5193
+glcmFeatures2Dmrg,difference entropy,4.12055
+glcmFeatures2Dmrg,sum average,131.515
+glcmFeatures2Dmrg,sum variance,194.565
+glcmFeatures2Dmrg,sum entropy,4.88801
+glcmFeatures2Dmrg,angular second moment,0.0179801
+glcmFeatures2Dmrg,contrast,143.351
+glcmFeatures2Dmrg,dissimilarity,9.32154
+glcmFeatures2Dmrg,inverse difference,0.199907
+glcmFeatures2Dmrg,inverse difference normalised,0.909324
+glcmFeatures2Dmrg,inverse difference moment,0.118854
+glcmFeatures2Dmrg,inverse difference moment normalised,0.982435
+glcmFeatures2Dmrg,inverse variance,0.117704
+glcmFeatures2Dmrg,correlation,0.096971
+glcmFeatures2Dmrg,autocorrelation,4359.51
+glcmFeatures2Dmrg,cluster tendency,194.565
+glcmFeatures2Dmrg,cluster shade,-10.3729
+glcmFeatures2Dmrg,cluster prominence,107308
+glcmFeatures2Dmrg,first measure of information correlation,-0.307287
+glcmFeatures2Dmrg,second measure of information correlation,0.936677
+glcmFeatures2Dvmrg,joint maximum,0.00409836
+glcmFeatures2Dvmrg,joint average,66.5028
+glcmFeatures2Dvmrg,joint variance,118.815
+glcmFeatures2Dvmrg,joint entropy,10.1636
+glcmFeatures2Dvmrg,difference average,9.85064
+glcmFeatures2Dvmrg,difference variance,63.1034
+glcmFeatures2Dvmrg,difference entropy,4.7128
+glcmFeatures2Dvmrg,sum average,133.005
+glcmFeatures2Dvmrg,sum variance,315.12
+glcmFeatures2Dvmrg,sum entropy,6.08821
+glcmFeatures2Dvmrg,angular second moment,0.00105363
+glcmFeatures2Dvmrg,contrast,160.139
+glcmFeatures2Dvmrg,dissimilarity,9.85063
+glcmFeatures2Dvmrg,inverse difference,0.190548
+glcmFeatures2Dvmrg,inverse difference normalised,0.904937
+glcmFeatures2Dvmrg,inverse difference moment,0.110162
+glcmFeatures2Dvmrg,inverse difference moment normalised,0.980481
+glcmFeatures2Dvmrg,inverse variance,0.114747
+glcmFeatures2Dvmrg,correlation,0.3261
+glcmFeatures2Dvmrg,autocorrelation,4461.36
+glcmFeatures2Dvmrg,cluster tendency,315.12
+glcmFeatures2Dvmrg,cluster shade,135.467
+glcmFeatures2Dvmrg,cluster prominence,214033
+glcmFeatures2Dvmrg,first measure of information correlation,-0.0922993
+glcmFeatures2Dvmrg,second measure of information correlation,0.791194
+glcmFeatures3Davg,joint maximum,0.00629739
+glcmFeatures3Davg,joint average,66.6274
+glcmFeatures3Davg,joint variance,117.655
+glcmFeatures3Davg,joint entropy,9.28821
+glcmFeatures3Davg,difference average,9.48124
+glcmFeatures3Davg,difference variance,57.8045
+glcmFeatures3Davg,difference entropy,4.54822
+glcmFeatures3Davg,sum average,133.255
+glcmFeatures3Davg,sum variance,317.904
+glcmFeatures3Davg,sum entropy,6.00287
+glcmFeatures3Davg,angular second moment,0.00187914
+glcmFeatures3Davg,contrast,152.716
+glcmFeatures3Davg,dissimilarity,9.48124
+glcmFeatures3Davg,inverse difference,0.201853
+glcmFeatures3Davg,inverse difference normalised,0.908356
+glcmFeatures3Davg,inverse difference moment,0.121329
+glcmFeatures3Davg,inverse difference moment normalised,0.981385
+glcmFeatures3Davg,inverse variance,0.122879
+glcmFeatures3Davg,correlation,0.353321
+glcmFeatures3Davg,autocorrelation,4480.69
+glcmFeatures3Davg,cluster tendency,317.904
+glcmFeatures3Davg,cluster shade,115.981
+glcmFeatures3Davg,cluster prominence,220188
+glcmFeatures3Davg,first measure of information correlation,-0.253564
+glcmFeatures3Davg,second measure of information correlation,0.96375
+glcmFeatures3DWmrg,joint maximum,0.00448305
+glcmFeatures3DWmrg,joint average,66.5971
+glcmFeatures3DWmrg,joint variance,117.721
+glcmFeatures3DWmrg,joint entropy,10.366
+glcmFeatures3DWmrg,difference average,9.25749
+glcmFeatures3DWmrg,difference variance,61.8875
+glcmFeatures3DWmrg,difference entropy,4.6546
+glcmFeatures3DWmrg,sum average,133.194
+glcmFeatures3DWmrg,sum variance,323.293
+glcmFeatures3DWmrg,sum entropy,6.13138
+glcmFeatures3DWmrg,angular second moment,0.000946873
+glcmFeatures3DWmrg,contrast,147.589
+glcmFeatures3DWmrg,dissimilarity,9.25749
+glcmFeatures3DWmrg,inverse difference,0.207581
+glcmFeatures3DWmrg,inverse difference normalised,0.910374
+glcmFeatures3DWmrg,inverse difference moment,0.126808
+glcmFeatures3DWmrg,inverse difference moment normalised,0.981999
+glcmFeatures3DWmrg,inverse variance,0.127541
+glcmFeatures3DWmrg,correlation,0.373139
+glcmFeatures3DWmrg,autocorrelation,4479.1
+glcmFeatures3DWmrg,cluster tendency,323.293
+glcmFeatures3DWmrg,cluster shade,51.5454
+glcmFeatures3DWmrg,cluster prominence,226113
+glcmFeatures3DWmrg,first measure of information correlation,-0.0527766
+glcmFeatures3DWmrg,second measure of information correlation,0.655653
+GLRLMFeatures2Davg,short run emphasis,0.978374
+GLRLMFeatures2Davg,long runs emphasis,1.08952
+GLRLMFeatures2Davg,Low grey level run emphasis,0.000263655
+GLRLMFeatures2Davg,High grey level run emphasis,4207.57
+GLRLMFeatures2Davg,Short run low grey level emphasis,0.00025895
+GLRLMFeatures2Davg,Short run high grey level emphasis,4100.64
+GLRLMFeatures2Davg,Long run low grey level emphasis,0.000283203
+GLRLMFeatures2Davg,Long run high grey level emphasis,4648.03
+GLRLMFeatures2Davg,Grey level non uniformity,1.78067
+GLRLMFeatures2Davg,Grey level non uniformity normalized,0.0810338
+GLRLMFeatures2Davg,Run length non uniformity,26.6487
+GLRLMFeatures2Davg,Run length non uniformity normalized,0.947442
+GLRLMFeatures2Davg,Run percentage,0.972854
+GLRLMFeatures2Davg,Grey level variance,86.9595
+GLRLMFeatures2Davg,Run length variance,0.0282142
+GLRLMFeatures2Davg,Run entropy,3.99238
+GLRLMFeatures2DDmrg,short run emphasis,0.979575
+GLRLMFeatures2DDmrg,long runs emphasis,1.08462
+GLRLMFeatures2DDmrg,Low grey level run emphasis,0.000263243
+GLRLMFeatures2DDmrg,High grey level run emphasis,4258.75
+GLRLMFeatures2DDmrg,Short run low grey level emphasis,0.000258775
+GLRLMFeatures2DDmrg,Short run high grey level emphasis,4157.06
+GLRLMFeatures2DDmrg,Long run low grey level emphasis,0.000281787
+GLRLMFeatures2DDmrg,Long run high grey level emphasis,4678.48
+GLRLMFeatures2DDmrg,Grey level non uniformity,20.1492
+GLRLMFeatures2DDmrg,Grey level non uniformity normalized,0.0265821
+GLRLMFeatures2DDmrg,Run length non uniformity,718.194
+GLRLMFeatures2DDmrg,Run length non uniformity normalized,0.947358
+GLRLMFeatures2DDmrg,Run percentage,0.973042
+GLRLMFeatures2DDmrg,Grey level variance,118.534
+GLRLMFeatures2DDmrg,Run length variance,0.0282477
+GLRLMFeatures2DDmrg,Run entropy,5.46159
+GLRLMFeatures2DWmrg,short run emphasis,0.979272
+GLRLMFeatures2DWmrg,long runs emphasis,1.08575
+GLRLMFeatures2DWmrg,Low grey level run emphasis,0.000263607
+GLRLMFeatures2DWmrg,High grey level run emphasis,4208.5
+GLRLMFeatures2DWmrg,Short run low grey level emphasis,0.000259082
+GLRLMFeatures2DWmrg,Short run high grey level emphasis,4106.26
+GLRLMFeatures2DWmrg,Long run low grey level emphasis,0.000282389
+GLRLMFeatures2DWmrg,Long run high grey level emphasis,4629.49
+GLRLMFeatures2DWmrg,Grey level non uniformity,7.0526
+GLRLMFeatures2DWmrg,Grey level non uniformity normalized,0.0801884
+GLRLMFeatures2DWmrg,Run length non uniformity,106.436
+GLRLMFeatures2DWmrg,Run length non uniformity normalized,0.947007
+GLRLMFeatures2DWmrg,Run percentage,0.972854
+GLRLMFeatures2DWmrg,Grey level variance,87.0435
+GLRLMFeatures2DWmrg,Run length variance,0.0283804
+GLRLMFeatures2DWmrg,Run entropy,4.08463
+GLRLMFeatures2Dvmrg,short run emphasis,0.979625
+GLRLMFeatures2Dvmrg,long runs emphasis,1.08443
+GLRLMFeatures2Dvmrg,Low grey level run emphasis,0.000263239
+GLRLMFeatures2Dvmrg,High grey level run emphasis,4258.82
+GLRLMFeatures2Dvmrg,Short run low grey level emphasis,0.000258781
+GLRLMFeatures2Dvmrg,Short run high grey level emphasis,4157.41
+GLRLMFeatures2Dvmrg,Long run low grey level emphasis,0.000281744
+GLRLMFeatures2Dvmrg,Long run high grey level emphasis,4677.52
+GLRLMFeatures2Dvmrg,Grey level non uniformity,80.5099
+GLRLMFeatures2Dvmrg,Grey level non uniformity normalized,0.0265534
+GLRLMFeatures2Dvmrg,Run length non uniformity,2872.33
+GLRLMFeatures2Dvmrg,Run length non uniformity normalized,0.947338
+GLRLMFeatures2Dvmrg,Run percentage,0.973042
+GLRLMFeatures2Dvmrg,Grey level variance,118.546
+GLRLMFeatures2Dvmrg,Run length variance,0.0282562
+GLRLMFeatures2Dvmrg,Run entropy,5.49132
+GLRLMFeatures3Davg,short run emphasis,0.974764
+GLRLMFeatures3Davg,long runs emphasis,1.1141
+GLRLMFeatures3Davg,Low grey level run emphasis,0.000262943
+GLRLMFeatures3Davg,High grey level run emphasis,4261.13
+GLRLMFeatures3Davg,Short run low grey level emphasis,0.000256977
+GLRLMFeatures3Davg,Short run high grey level emphasis,4141.22
+GLRLMFeatures3Davg,Long run low grey level emphasis,0.000290075
+GLRLMFeatures3Davg,Long run high grey level emphasis,4801.72
+GLRLMFeatures3Davg,Grey level non uniformity,20.0427
+GLRLMFeatures3Davg,Grey level non uniformity normalized,0.0266292
+GLRLMFeatures3Davg,Run length non uniformity,706.173
+GLRLMFeatures3Davg,Run length non uniformity normalized,0.93681
+GLRLMFeatures3Davg,Run percentage,0.966229
+GLRLMFeatures3Davg,Grey level variance,117.966
+GLRLMFeatures3Davg,Run length variance,0.0397689
+GLRLMFeatures3Davg,Run entropy,5.48388
+GLRLMFeatures3Dmrg,short run emphasis,0.975375
+GLRLMFeatures3Dmrg,long runs emphasis,1.11058
+GLRLMFeatures3Dmrg,Low grey level run emphasis,0.000262967
+GLRLMFeatures3Dmrg,High grey level run emphasis,4260.94
+GLRLMFeatures3Dmrg,Short run low grey level emphasis,0.00025718
+GLRLMFeatures3Dmrg,Short run high grey level emphasis,4143.48
+GLRLMFeatures3Dmrg,Long run low grey level emphasis,0.000289105
+GLRLMFeatures3Dmrg,Long run high grey level emphasis,4786.95
+GLRLMFeatures3Dmrg,Grey level non uniformity,260.068
+GLRLMFeatures3Dmrg,Grey level non uniformity normalized,0.0265782
+GLRLMFeatures3Dmrg,Run length non uniformity,9170.2
+GLRLMFeatures3Dmrg,Run length non uniformity normalized,0.937169
+GLRLMFeatures3Dmrg,Run percentage,0.966229
+GLRLMFeatures3Dmrg,Grey level variance,118.029
+GLRLMFeatures3Dmrg,Run length variance,0.0394529
+GLRLMFeatures3Dmrg,Run entropy,5.53483
+GLSZMFeatures2Davg,small zone emphasis,0.915901
+GLSZMFeatures2Davg,Large zone emphasis,1.40003
+GLSZMFeatures2Davg,Low grey level zone emphasis,0.000266684
+GLSZMFeatures2Davg,High grey level zone emphasis,4157.73
+GLSZMFeatures2Davg,Small zone low grey level emphasis,0.000248215
+GLSZMFeatures2Davg,Small zone high grey level emphasis,3745.49
+GLSZMFeatures2Davg,Large zone low grey level emphasis,0.000355198
+GLSZMFeatures2Davg,Large zone high grey level emphasis,6101.67
+GLSZMFeatures2Davg,Grey level non uniformity GLSZM,1.57064
+GLSZMFeatures2Davg,Grey level non uniformity normalized GLSZM,0.077947
+GLSZMFeatures2Davg,Zone size non uniformity,21.1397
+GLSZMFeatures2Davg,Zone size non uniformity normalized,0.81224
+GLSZMFeatures2Davg,Zone percentage GLSZM,0.893801
+GLSZMFeatures2Davg,Grey level variance GLSZM,87.5751
+GLSZMFeatures2Davg,Zone size variance,0.131447
+GLSZMFeatures2Davg,Zone size entropy,4.07574
+GLSZMFeatures2Dvmrg,small zone emphasis,0.920532
+GLSZMFeatures2Dvmrg,Large zone emphasis,1.38164
+GLSZMFeatures2Dvmrg,Low grey level zone emphasis,0.000266937
+GLSZMFeatures2Dvmrg,High grey level zone emphasis,4200.72
+GLSZMFeatures2Dvmrg,Small zone low grey level emphasis,0.00024952
+GLSZMFeatures2Dvmrg,Small zone high grey level emphasis,3805.91
+GLSZMFeatures2Dvmrg,Large zone low grey level emphasis,0.000351423
+GLSZMFeatures2Dvmrg,Large zone high grey level emphasis,6074.86
+GLSZMFeatures2Dvmrg,Grey level non uniformity GLSZM,18.538
+GLSZMFeatures2Dvmrg,Grey level non uniformity normalized GLSZM,0.0265969
+GLSZMFeatures2Dvmrg,Zone size non uniformity,566.096
+GLSZMFeatures2Dvmrg,Zone size non uniformity normalized,0.81219
+GLSZMFeatures2Dvmrg,Zone percentage GLSZM,0.894737
+GLSZMFeatures2Dvmrg,Grey level variance GLSZM,117.932
+GLSZMFeatures2Dvmrg,Zone size variance,0.132501
+GLSZMFeatures2Dvmrg,Zone size entropy,5.7704
+GLSZMFeatures3D,small zone emphasis,0.735343
+GLSZMFeatures3D,Large zone emphasis,3.95344
+GLSZMFeatures3D,Low grey level zone emphasis,0.000271802
+GLSZMFeatures3D,High grey level zone emphasis,4103.81
+GLSZMFeatures3D,Small zone low grey level emphasis,0.000201812
+GLSZMFeatures3D,Small zone high grey level emphasis,2979.35
+GLSZMFeatures3D,Large zone low grey level emphasis,0.000939669
+GLSZMFeatures3D,Large zone high grey level emphasis,18609.9
+GLSZMFeatures3D,Grey level non uniformity GLSZM,13.6316
+GLSZMFeatures3D,Grey level non uniformity normalized GLSZM,0.0275943
+GLSZMFeatures3D,Zone size non uniformity,248.081
+GLSZMFeatures3D,Zone size non uniformity normalized,0.502188
+GLSZMFeatures3D,Zone percentage GLSZM,0.634146
+GLSZMFeatures3D,Grey level variance GLSZM,111.314
+GLSZMFeatures3D,Zone size variance,1.46675
+GLSZMFeatures3D,Zone size entropy,6.4276
+ngtdmFeatures2avg,coarseness,0.0824733
+ngtdmFeatures2avg,contrast,6.87309
+ngtdmFeatures2avg,busyness,0.0297703
+ngtdmFeatures2avg,complexity,1943.42
+ngtdmFeatures2avg,strength,31.949
+ngtdmFeatures2Dmrg,coarseness,0.00665333
+ngtdmFeatures2Dmrg,contrast,0.874654
+ngtdmFeatures2Dmrg,busyness,0.0976465
+ngtdmFeatures2Dmrg,complexity,5941.84
+ngtdmFeatures2Dmrg,strength,4.58551
+ngtdmFeatures3D,coarseness,0.00745225
+ngtdmFeatures3D,contrast,0.783871
+ngtdmFeatures3D,busyness,0.0871783
+ngtdmFeatures3D,complexity,5331.22
+ngtdmFeatures3D,strength,5.11657
+gldzmFeatures2Davg,small distance emphasis GLDZM,0.773609
+gldzmFeatures2Davg,Large distance emphasis GLDZM,2.16689
+gldzmFeatures2Davg,Low grey level zone emphasis GLDZM,0.000266684
+gldzmFeatures2Davg,High grey level zone emphasis GLDZM,4157.73
+gldzmFeatures2Davg,Small distance low grey level emphasis GLDZM,0.000220338
+gldzmFeatures2Davg,Small distance high grey level emphasis GLDZM,2982.7
+gldzmFeatures2Davg,Large distance low grey level emphasis GLDZM,0.000498932
+gldzmFeatures2Davg,Large distance high grey level emphasis GLDZM,10384.4
+gldzmFeatures2Davg,Grey level non uniformity GLDZM,1.57064
+gldzmFeatures2Davg,Grey level non uniformity normalized GLDZM,0.077947
+gldzmFeatures2Davg,Zone distance non uniformity GLDZM,13.6084
+gldzmFeatures2Davg,Zone distance non uniformity normalized GLDZM,0.60402
+gldzmFeatures2Davg,Zone percentage GLDZM,0.893801
+gldzmFeatures2Davg,Grey level variance GLDZM,51.3711
+gldzmFeatures2Davg,Zone distance variance GLDZM,0.297499
+gldzmFeatures2Davg,Zone distance entropy GLDZM,4.17403
+gldzmFeatures2Dmrg,small distance emphasis GLDZM,0.720688
+gldzmFeatures2Dmrg,Large distance emphasis GLDZM,2.52654
+gldzmFeatures2Dmrg,Low grey level zone emphasis GLDZM,0.000266937
+gldzmFeatures2Dmrg,High grey level zone emphasis GLDZM,4200.72
+gldzmFeatures2Dmrg,Small distance low grey level emphasis GLDZM,0.000209633
+gldzmFeatures2Dmrg,Small distance high grey level emphasis GLDZM,2747.33
+gldzmFeatures2Dmrg,Large distance low grey level emphasis GLDZM,0.000570272
+gldzmFeatures2Dmrg,Large distance high grey level emphasis GLDZM,12383.6
+gldzmFeatures2Dmrg,Grey level non uniformity GLDZM,18.538
+gldzmFeatures2Dmrg,Grey level non uniformity normalized GLDZM,0.0265969
+gldzmFeatures2Dmrg,Zone distance non uniformity GLDZM,345.448
+gldzmFeatures2Dmrg,Zone distance non uniformity normalized GLDZM,0.495621
+gldzmFeatures2Dmrg,Zone percentage GLDZM,0.223684
+gldzmFeatures2Dmrg,Grey level variance GLDZM,117.932
+gldzmFeatures2Dmrg,Zone distance variance GLDZM,0.439201
+gldzmFeatures2Dmrg,Zone distance entropy GLDZM,6.24
+gldzmFeatures3D,small distance emphasis GLDZM,0.777089
+gldzmFeatures3D,Large distance emphasis GLDZM,2.15789
+gldzmFeatures3D,Low grey level zone emphasis GLDZM,0.000271802
+gldzmFeatures3D,High grey level zone emphasis GLDZM,4103.81
+gldzmFeatures3D,Small distance low grey level emphasis GLDZM,0.000225044
+gldzmFeatures3D,Small distance high grey level emphasis GLDZM,2963.45
+gldzmFeatures3D,Large distance low grey level emphasis GLDZM,0.00050787
+gldzmFeatures3D,Large distance high grey level emphasis GLDZM,10191.1
+gldzmFeatures3D,Grey level non uniformity GLDZM,13.6316
+gldzmFeatures3D,Grey level non uniformity normalized GLDZM,0.0275943
+gldzmFeatures3D,Zone distance non uniformity GLDZM,279.526
+gldzmFeatures3D,Zone distance non uniformity normalized GLDZM,0.565843
+gldzmFeatures3D,Zone percentage GLDZM,0.634146
+gldzmFeatures3D,Grey level variance GLDZM,111.314
+gldzmFeatures3D,Zone distance variance GLDZM,0.35121
+gldzmFeatures3D,Zone distance entropy GLDZM,6.07984
+ngldmFeatures2Davg,Low dependence emphasis,0.847398
+ngldmFeatures2Davg,High dependence emphasis,1.68512
+ngldmFeatures2Davg,Low grey level count emphasis,0.000262659
+ngldmFeatures2Davg,High grey level count emphasis,4224.45
+ngldmFeatures2Davg,Low dependence low grey level emphasis,0.000229195
+ngldmFeatures2Davg,Low dependence high grey level emphasis,3475.57
+ngldmFeatures2Davg,High dependence low grey level emphasis,0.000412063
+ngldmFeatures2Davg,High dependence high grey level emphasis,7604.34
+ngldmFeatures2Davg,Grey level non uniformity,1.85441
+ngldmFeatures2Davg,Grey level non uniformity normalized,0.0820449
+ngldmFeatures2Davg,Dependence count non uniformity,20.0393
+ngldmFeatures2Davg,Dependence count non uniformity normalized,0.699041
+ngldmFeatures2Davg,Dependence count percentage,1
+ngldmFeatures2Davg,Grey level variance,86.8037
+ngldmFeatures2Davg,Dependence count variance,0.188678
+ngldmFeatures2Davg,Dependence count entropy,4.08601
+ngldmFeatures2Davg,dependence Count Energy,0.0743916
+ngldmFeatures2Dmrg,Low dependence emphasis,0.849237
+ngldmFeatures2Dmrg,High dependence emphasis,1.68293
+ngldmFeatures2Dmrg,Low grey level count emphasis,0.000262047
+ngldmFeatures2Dmrg,High grey level count emphasis,4277.92
+ngldmFeatures2Dmrg,Low dependence low grey level emphasis,0.000228944
+ngldmFeatures2Dmrg,Low dependence high grey level emphasis,3530.62
+ngldmFeatures2Dmrg,High dependence low grey level emphasis,0.000411329
+ngldmFeatures2Dmrg,High dependence high grey level emphasis,7675.19
+ngldmFeatures2Dmrg,Grey level non uniformity,20.7176
+ngldmFeatures2Dmrg,Grey level non uniformity normalized,0.0265951
+ngldmFeatures2Dmrg,Dependence count non uniformity,526.856
+ngldmFeatures2Dmrg,Dependence count non uniformity normalized,0.676324
+ngldmFeatures2Dmrg,Dependence count percentage,1
+ngldmFeatures2Dmrg,Grey level variance,118.743
+ngldmFeatures2Dmrg,Dependence count variance,0.205095
+ngldmFeatures2Dmrg,Dependence count entropy,5.97672
+ngldmFeatures2Dmrg,dependence Count Energy,0.0188764
+ngldmFeatures3Dmrg,Low dependence emphasis,0.538379
+ngldmFeatures3Dmrg,High dependence emphasis,4.53017
+ngldmFeatures3Dmrg,Low grey level count emphasis,0.000262047
+ngldmFeatures3Dmrg,High grey level count emphasis,4277.92
+ngldmFeatures3Dmrg,Low dependence low grey level emphasis,0.000146582
+ngldmFeatures3Dmrg,Low dependence high grey level emphasis,2201.95
+ngldmFeatures3Dmrg,High dependence low grey level emphasis,0.00105772
+ngldmFeatures3Dmrg,High dependence high grey level emphasis,21784.1
+ngldmFeatures3Dmrg,Grey level non uniformity,20.7176
+ngldmFeatures3Dmrg,Grey level non uniformity normalized,0.0265951
+ngldmFeatures3Dmrg,Dependence count non uniformity,264.466
+ngldmFeatures3Dmrg,Dependence count non uniformity normalized,0.339494
+ngldmFeatures3Dmrg,Dependence count percentage,1
+ngldmFeatures3Dmrg,Grey level variance,118.743
+ngldmFeatures3Dmrg,Dependence count variance,1.0031
+ngldmFeatures3Dmrg,Dependence count entropy,6.78972
+ngldmFeatures3Dmrg,dependence Count Energy,0.0108612

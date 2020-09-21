@@ -1,0 +1,4 @@
+Image,Mask
+/home/manos/git/radiomics-features-extraction/test_image_files/test_image.nii,/home/manos/git/radiomics-features-extraction/test_image_files/test_image_roi.nii
+Image,Mask
+/home/manos/git/radiomics-features-extraction/test_image_files/test_image.nii,/home/manos/git/radiomics-features-extraction/test_image_files/test_image_roi.nii
