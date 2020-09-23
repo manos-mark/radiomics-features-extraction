@@ -1,1 +1,0 @@
- .\RaCat\settings\RaCat_32bit.exe --ini .\RaCat\settings\config_CT_FBW_Interpolation2mm.ini --img .\RaCat\images\R01-001.nii file --voi .\RaCat\masks\R01-001_roi.nii file --out .\RaCat\output\R01-001
