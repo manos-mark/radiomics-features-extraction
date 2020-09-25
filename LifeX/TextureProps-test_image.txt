@@ -1,0 +1,29 @@
+# start of file
+
+# Common
+LIFEx.texture.BinSize=25
+LIFEx.texture.NbGrey=0
+LIFEx.texture.SessionCsv=/home/manos/Desktop/radiomics/LifeX/lifex_extracted_features.xls
+
+# Absolute
+LIFEx.texture.ButtonAbsolute=false
+LIFEx.texture.MinBound=0.0
+LIFEx.texture.MaxBound=400.0
+
+# RelativeMeanSd
+LIFEx.texture.ButtonRelativeMeanSd=false
+
+# RelativeMinMax
+LIFEx.texture.ButtonRelativeMinMax=true
+
+# SpatialResampling
+LIFEx.texture.ZSpatialResampling=0
+LIFEx.texture.YSpatialResampling=0
+LIFEx.texture.XSpatialResampling=0
+# DistanceWithNeighbours
+LIFEx.texture.GLCM.DistanceWithNeighbours=1
+
+# Patient1
+LIFEx.texture.Img0=/home/manos/git/radiomics-features-extraction/test_image_files/test-image.nii 
+LIFEx.texture.Img0Roi0=/home/manos/git/radiomics-features-extraction/test_image_files/testimage_roi.nii
+

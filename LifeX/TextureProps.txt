@@ -6,14 +6,16 @@ LIFEx.texture.NbGrey=0
 LIFEx.texture.SessionCsv=/home/manos/Desktop/radiomics/LifeX/lifex_extracted_features.xls
 
 # Absolute
-LIFEx.texture.ButtonAbsolute=true
+LIFEx.texture.ButtonAbsolute=false
 LIFEx.texture.MinBound=0.0
 LIFEx.texture.MaxBound=400.0
 
 # RelativeMeanSd
 LIFEx.texture.ButtonRelativeMeanSd=false
+
 # RelativeMinMax
-LIFEx.texture.ButtonRelativeMinMax=false
+LIFEx.texture.ButtonRelativeMinMax=true
+
 
 # SpatialResampling
 LIFEx.texture.ZSpatialResampling=0
