@@ -23,7 +23,7 @@ def import_dataset():
             file_path = os.path.join(DATASET_PATH, file)
 
             if "_roi" in file:
-                filename = file.rsplit("_")[0]
+                filename = file.rsplit("_roi")[0]
                 if filename in cases_dict.keys():
                     cases_dict[filename].update({'Mask': file_path})
                 else:
